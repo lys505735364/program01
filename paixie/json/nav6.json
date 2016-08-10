@@ -1,0 +1,18 @@
+{
+  "title":[{"t0":"热销品牌"},{"t1":"女包"},{"t2":"男包"},{"t3":"家纺"}],
+  "urlist":[
+    {"u0":"index.html","u1":"index.html","u2":"index.html","u3":"index.html","u4":"index.html","u5":"index.html","u6":"index.html"},
+    {"u0":"index.html","u1":"index.html","u2":"index.html","u3":"index.html","u4":"index.html","u5":"index.html"},
+    {"u0":"index.html","u1":"index.html","u2":"index.html","u3":"index.html","u4":"index.html","u5":"index.html"},
+    {"u0":"index.html","u1":"index.html","u2":"index.html","u3":"index.html","u4":"index.html","u5":"index.html"}
+  ],
+  "list":[
+    {"a0":"瑞士军刀","a1":"优客优可","a2":"丹爵","a3":"代代花枳","a4":"柏丽雅诗","a5":"玉鹭","a6":"浪莎"},
+    {"a0":"上新","a1":"钱包","a2":"手提包","a3":"单肩包","a4":"双肩包","a5":"旅行箱"},
+    {"a0":"新品", "a1":"腰包","a2":"钱包","a3":"商务包","a4":"双肩包","a5":"旅行箱"},
+    {"a0":"新品","a1":"床上用品","a2":"婴童床品","a3":"蚊帐","a4":"床上多件套","a5":"靠枕/枕头"}
+  ],
+
+
+  "image":"image/navboxshow07.jpg"
+}

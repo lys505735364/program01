@@ -1,0 +1,23 @@
+{
+  "title":[{"t0":"热销品牌"},{"t1":"热门推荐"},{"t2":"凉鞋"},{"t3":"单鞋"},{"t4":"休闲鞋"},{"t5":"价格搜索区间"}],
+  "urlist":[
+    {"u0":"index.html","u1":"index.html","u2":"index.html","u3":"index.html","u4":"index.html","u5":"index.html","u6":"index.html","u7":"index.html","u8":"index.html"},
+    {"u0":"index.html","u1":"index.html","u2":"index.html","u3":"index.html","u4":"index.html"},
+    {"u0":"index.html","u1":"index.html","u2":"index.html","u3":"index.html","u4":"index.html"},
+    {"u0":"index.html","u1":"index.html","u2":"index.html","u3":"index.html","u4":"index.html","u5":"index.html"},
+    {"u0":"index.html","u1":"index.html","u2":"index.html","u3":"index.html","u4":"index.html","u5":"index.html"},
+    {"u0":"index.html","u1":"index.html","u2":"index.html","u3":"index.html","u4":"index.html"}
+  ],
+
+  "list":[
+    {"a0":"星期六","a1":"达芙妮","a2":"伊思Q","a3":"人本","a4":"名将","a5":"骊人阁","a6":"巫卡卡","a7":"卓诗尼","a8":"鞋柜"},
+    {"a0":"凉鞋","a1":"帆布鞋","a2":"小白鞋","a3":"松糕鞋","a4":"乐福鞋"},
+    {"a0":"平底", "a1":"中低跟","a2":"高跟","a3":"鱼嘴","a4":"一字扣"},
+    {"a0":"系带","a1":"套脚","a2":"拉链","a3":"休闲风","a4":"欧美风","a5":"英伦风"},
+    {"a0":"新品","a1":"系带","a2":"套脚","a3":"拉链","a4":"松紧带","a5":"魔术贴"},
+    {"a0":"0-99","a1":"100-199","a2":"200-299","a3":"300-399","a4":"400-499"}
+  ],
+
+
+  "image":"image/navboxshow02.jpg"
+}

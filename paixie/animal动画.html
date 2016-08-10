@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>animal动画</title>
+    <style>
+        .pic{
+            height: 200px;
+            width: 200px;
+            overflow: hidden;
+            float: left;
+        }
+        img{
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+<div class="pic"><img src="img2/1.jpg" alt=""></div>
+<div class="pic"><img src="img2/2.jpg" alt=""></div>
+<div class="pic"><img src="img2/3.jpg" alt=""></div>
+<div class="pic"><img src="img2/4.jpg" alt=""></div>
+<div class="pic"><img src="img2/5.jpg" alt=""></div>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script>
+    $(".pic").hover(function(){
+        $(this).children("img").stop().animate({
+            height:250,
+            width:250,
+            marginLeft:-25,
+            marginTop:-25
+        },300)
+    },function(){
+        $(this).children("img").stop().animate({
+            height:200,
+            width:200,
+            marginLeft:0,
+            marginTop:0
+        },300)
+
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "title":[{"t0":"热销品牌"},{"t1":"热卖推荐"},{"t2":"童鞋"},{"t3":"童装"},{"t4":"价格搜索区间"}],
+  "urlist":[
+    {"u0":"index.html","u1":"index.html","u2":"index.html","u3":"index.html","u4":"index.html"},
+    {"u0":"index.html","u1":"index.html","u2":"index.html","u3":"index.html","u4":"index.html","u5":"index.html","u6":"index.html"},
+    {"u0":"index.html","u1":"index.html","u2":"index.html","u3":"index.html","u4":"index.html","u5":"index.html","u6":"index.html"},
+    {"u0":"index.html","u1":"index.html","u2":"index.html","u3":"index.html","u4":"index.html","u5":"index.html"},
+    {"u0":"index.html","u1":"index.html","u2":"index.html","u3":"index.html"}
+  ],
+
+
+  "list":[
+    {"a0":"咪咪熊","a1":"比特龙","a2":"吉吉猴","a3":"361度","a4":"鸿星尔克"},
+    {"a0":"凉鞋","a1":"儿童运动鞋","a2":"童皮鞋","a3":"学步鞋","a4":"男童装","a5":"女童装","a6":"公主鞋"},
+    {"a0":"凉鞋", "a1":"运动鞋","a2":"帆布鞋","a3":"童皮鞋","a4":"亲子鞋","a5":"公主鞋","a6":"全能鞋"},
+    {"a0":"T恤","a1":"衬衫","a2":"裙子","a3":"套装","a4":"裤子","a5":"外套"},
+    {"a0":"0-99","a1":"100-199","a2":"200-299","a3":"300-399"}
+  ],
+
+
+  "image":"image/navboxshow06.jpg"
+}

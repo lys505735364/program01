@@ -1,0 +1,22 @@
+{
+  "title":[{"t0":"运动鞋"},{"t1":"运动服"},{"t2":"潮流运动"},{"t3":"运动配件"},{"t4":"价格搜索区间"}],
+  "urlist":[
+    {"u0":"index.html","u1":"index.html","u2":"index.html","u3":"index.html","u4":"index.html","u5":"index.html","u6":"index.html","u7":"index.html","u8":"index.html"},
+    {"u0":"index.html","u1":"index.html","u2":"index.html","u3":"index.html","u4":"index.html","u5":"index.html","u6":"index.html"},
+    {"u0":"index.html","u1":"index.html","u2":"index.html","u3":"index.html","u4":"index.html","u5":"index.html","u6":"index.html"},
+    {"u0":"index.html","u1":"index.html","u2":"index.html","u3":"index.html","u4":"index.html","u5":"index.html","u6":"index.html","u7":"index.html"},
+    {"u0":"index.html","u1":"index.html","u2":"index.html","u3":"index.html","u4":"index.html"}
+  ],
+
+
+  "list":[
+    {"a0":"板鞋","a1":"篮球鞋","a2":"运动休闲鞋","a3":"综训鞋","a4":"帆布鞋","a5":"足球鞋","a6":"跑步鞋","a7":"网球鞋","a8":"复古鞋"},
+    {"a0":"运动T恤","a1":"运动POLO衫","a2":"卫衣套头衫","a3":"运动套装","a4":"运动风衣","a5":"夹克","a6":"短裤"},
+    {"a0":"运动鞋", "a1":"三叶草","a2":"潮流宝宝","a3":"阿迪新款","a4":"阿甘系列","a5":"AIR MAX","a6":"耐克爆款"},
+    {"a0":"瑜伽用品","a1":"双肩包","a2":"单肩包","a3":"运动袜子","a4":"运动帽","a5":"运动护具", "a6":"休闲包","a7":"手套"},
+    {"a0":"0-99","a1":"100-199","a2":"200-299","a3":"300-399","a4":"400-499"}
+  ],
+
+
+  "image":"image/navboxshow01.jpg"
+}

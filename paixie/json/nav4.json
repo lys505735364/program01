@@ -1,0 +1,19 @@
+{
+  "title":[{"t0":"热卖推荐"},{"t1":"户外服饰"},{"t2":"特惠推荐"},{"t3":"价格搜索区间"}],
+  "urlist":[
+    {"u0":"index.html","u1":"index.html","u2":"index.html","u3":"index.html","u4":"index.html","u5":"index.html"},
+    {"u0":"index.html","u1":"index.html","u2":"index.html","u3":"index.html","u4":"index.html"},
+    {"u0":"index.html","u1":"index.html","u2":"index.html","u3":"index.html","u4":"index.html"},
+    {"u0":"index.html","u1":"index.html","u2":"index.html","u3":"index.html","u4":"index.html"}
+  ],
+
+  "list":[
+    {"a0":"户外新品","a1":"登山鞋","a2":"户外休闲鞋","a3":"溯溪鞋","a4":"沙滩鞋","a5":"户外配件"},
+    {"a0":"皮肤衣","a1":"速干T恤","a2":"速干裤","a3":"户外套装","a4":"泳衣"},
+    {"a0":"宝飘旗舰店","a1":"Tri-polar旗舰店","a2":"探拓者","a3":"穆峰"},
+    {"a0":"0-99","a1":"100-199","a2":"200-299","a3":"300-399","a4":"400-499"}
+  ],
+
+
+  "image":"image/navboxshow05.jpg"
+}

@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>拍鞋网商城首页_欧内专业品牌鞋服购物网站_买鞋子 就上拍鞋网!</title>
+    <meta name="keyword" content="拍鞋网,拍鞋网官方网站,拍鞋网商城"/>
+    <meta name="descripaion" content="买鞋子那个网店好,当然首选拍鞋网!中国最早成立的正品鞋服购物网站,国内最专业的品牌鞋服在线商城.所售鞋服100%厂家授权,全国包邮,货到付款,提供最完美的购物体验!"/>
+</head>
+<link rel="stylesheet" href="css/public.css">
+<link rel="stylesheet" href="css/index.css">
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/ajax.js"></script>
+<body>
+<!--
+--左侧楼层菜单
+-->
+<ul class="index_leftBar" id="index_left" style="display:none;">
+    <li class="Floor_1"><span id="aaa1" style="visibility: visible">运动户外</span></li>
+    <li class="Floor_2"><span style="visibility: hidden">女鞋女装</span></li>
+    <li class="Floor_3"><span style="visibility: hidden">男鞋男装</span></li>
+    <li class="Floor_4"><span style="visibility: visible">童鞋童装</span></li>
+    <li class="Floor_5"><span style="visibility: hidden">箱包家纺</span></li>
+</ul>
+<!--
+--右侧常驻功能菜单
+-->
+<div class="index_rightBar" id="index_right" style="display:none;"></div>
+<!--
+--吸顶菜单
+-->
+<div class="Scroll_TopBar" id="Scroll_top"></div>
+<!--
+--最顶部
+-->
+<div class="index_Head_Head">
+    <div class="index_Head" id="index_Head">
+        <div class="index_Head_nav">
+            <a href="iphone.html" class="AppLink"></a>
+            <div class="Not_login" style="display: block">
+                <p>你好!欢迎来拍鞋网!</p>
+                <a href="Login.html" class="UserLogin"></a>
+                <a href="regedit.html" class="UserRegedit">免费注册</a>
+            </div>
+            <div class="Has_login" style="display: none">
+            </div>
+            <div class="index_Head_navR">
+            <span class="index_Cart">
+                <a href=""><em class="index_Cart_Icon"></em> <em class="index_Cart_link">购物车</em><em id="index_Cart_Count"></em></a>
+                <ul class="index_CartList"></ul>
+            </span>
+                <i>|</i>
+            <span class="index_MyPX">
+                <a href="" class="index_MyPX_Link">我的拍鞋 <em class="index_MyPX_Icon"></em></a>
+                <ul class="index_MyPX_list">
+                    <li class="mypx_list_item"><a href="index.html" class="mypx_list_link">我的订单</a></li>
+                    <li class="mypx_list_item"><a href="index.html" class="mypx_list_link">我的收藏</a></li>
+                    <li class="mypx_list_item"><a href="index.html" class="mypx_list_link">我的优惠券</a></li>
+                </ul>
+            </span>
+                <i>|</i>
+            <span class="index_NewsLink">
+                <a href="">消息 <em id="index_NewsCount"></em></a>
+            </span>
+                <i>|</i>
+            <span class="User_VIPClub">
+                <a href="">会员俱乐部</a>
+            </span>
+                <i>|</i>
+            <span class="Web_Nav">
+                网址导航 <em class="Web_Nav_Icon"></em>
+                <ul class="Web_nav_list">
+                    <li class="webnavli"><a href="index.html" class="webnavitem">商家入驻</a></li>
+                    <li class="webnavli"><a href="index.html" class="webnavitem">了解拍鞋网</a></li>
+                    <li class="webnavli"><a href="index.html" class="webnavitem">拍鞋公益</a></li>
+                    <li class="webnavli"><a href="index.html" class="webnavitem">网站地图</a></li>
+                    <li class="webnavli"><a href="index.html" class="webnavitem">新手帮助</a></li>
+                </ul>
+            </span>
+            </div>
+        </div>
+    </div>
+</div>
+<!--
+--网站Logo,搜索栏
+-->
+<div class="index_Head_Logo">
+    <div class="head_logo_search">
+        <h1 class="index_Web_logo"><a href="index.html" class="Logo_a"  title="拍鞋网Logo"></a></h1>
+        <a  href="index.html" class="index_Active_PLink"><img src="image/7_7.gif" title="七夕以爱之名"></a>
+        <div class="index_Search">
+            <form action="#" name="SearchBox" class="Search_Form" id="SearchForm">
+                <input type="text" class="index_Search_Text" id="index_Search_Text"/>
+                <input type="button" name="SearchButton" id="index_Search_Button" value="搜索"/>
+            </form>
+            <div class="Search_ListBox" id="SearchList" style="diplay:none"></div>
+            <div class="index_Active_Tlink">
+                <a href="index.html" class="act_link" style="color:#fa5000">七夕专场</a>
+                <a href="index.html" class="act_link">跑步鞋</a>
+                <a href="index.html" class="act_link">男士凉鞋</a>
+                <a href="index.html" class="act_link" style="color:#fa5000">女士凉鞋</a>
+                <a href="index.html" class="act_link">小白鞋</a>
+                <a href="index.html" class="act_link">百搭T恤</a>
+                <a href="index.html" class="act_link" style="color:#fa5000">男鞋特卖</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--
+--网站总菜单,导航
+-->
+<div class="index_NavBox">
+    <div class="index_Nav">
+        <div class="All_shop_list"><i class="shop_list_icon"></i><span class="shop_list_title">全部商品分类</span></div>
+        <div class="All_Nav_List">
+            <a href="index.html" class="nav_item">首页</a>
+            <a href="index.html" class="nav_item">爱团购</a>
+            <a href="index.html" class="nav_item">闪购
+                <i class="index_hot_icon"></i></a>
+            <a href="index.html" class="nav_item">今日特价
+                <i class="index_new_icon"></i></a>
+        </div>
+        <a href="index.html" class="Double_Code" title="拍拍吧"><img src="image/DC.jpg" alt="丢了" class="Double_Codeimg"></a>
+    </div>
+</div>
+<!--
+-- 网站的Body
+-->
+<div class="clear"></div>
+<div class="index_body">
+    <div class="index_body_top">
+        <div class="index_body_topL">
+            <ul class="nav_box">
+                <li class="nav_box_no1">
+                    <span class="nav_listitem_title"><i class="navlisticon"></i><a href="index.html" class="navlisttext">运动馆</a></span>
+                    <p class="nav_listitem_doc">
+                        <a href="">板鞋</a><a href="">跑步鞋</a><a href="">休闲鞋</a><a href="">篮球鞋</a>
+                    </p>
+                    <div class="nav_box_show">
+                        <div class="showbox_right">
+                            <i class="close_navbox_but"></i>
+                            <span class="showbox_img"><a href="index.html"></a></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav_box_no1">
+                    <span class="nav_listitem_title"><i class="navlisticon" style="background-position-y: -445px"></i><a href="index.html" class="navlisttext">女鞋馆</a></span>
+                    <p class="nav_listitem_doc">
+                        <a href="">夏季新品</a><a href="">凉鞋</a><a href="">单鞋</a><a href="">休闲鞋</a>
+                    </p>
+                    <div class="nav_box_show">
+                        <div class="showbox_right">
+                            <i class="close_navbox_but"></i>
+                            <span class="showbox_img"><a href="index.html"></a></span>
+                        </div></div>
+                </li>
+                <li class="nav_box_no1">
+                    <span class="nav_listitem_title"><i class="navlisticon" style="background-position-y: -491px"></i><a href="index.html" class="navlisttext">男鞋馆</a></span>
+                    <p class="nav_listitem_doc">
+                        <a href="">凉鞋</a><a href="">休闲鞋</a><a href="">帆布鞋</a><a href="">豆豆鞋</a>
+                    </p>
+                    <div class="nav_box_show">
+                        <div class="showbox_right">
+                            <i class="close_navbox_but"></i>
+                            <span class="showbox_img"><a href="index.html"></a></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav_box_no1">
+                    <span class="nav_listitem_title"><i class="navlisticon" style="background-position-y: -577px"></i><a href="index.html" class="navlisttext">服饰馆</a></span>
+                    <p class="nav_listitem_doc">
+                        <a href="">女装</a><a href="">男装</a><a href="">人气美裙</a><a href="">牛仔短</a>
+                    </p>
+                    <div class="nav_box_show">
+                        <div class="showbox_right">
+                            <i class="close_navbox_but"></i>
+                            <span class="showbox_img"><a href="index.html"></a></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav_box_no1">
+                    <span class="nav_listitem_title"><i class="navlisticon" style="background-position-y: -533px"></i><a href="index.html" class="navlisttext">户外馆</a></span>
+                    <p class="nav_listitem_doc">
+                        <a href="">登山鞋</a><a href="">溯溪鞋</a><a href="">休闲鞋</a><a href="">户外</a>
+                    </p>
+                    <div class="nav_box_show">
+                        <div class="showbox_right">
+                            <i class="close_navbox_but"></i>
+                            <span class="showbox_img"><a href="index.html"></a></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav_box_no1">
+                    <span class="nav_listitem_title"><i class="navlisticon" style="background-position-y: -624px"></i><a href="index.html" class="navlisttext">儿童馆</a></span>
+                    <p class="nav_listitem_doc">
+                        <a href="">新品童鞋</a><a href="">凉鞋</a><a href="">运动鞋</a><a href="">帆布</a>
+                    </p>
+                    <div class="nav_box_show"style="top:61px;">
+                        <div class="showbox_right">
+                            <i class="close_navbox_but"></i>
+                            <span class="showbox_img"><a href="index.html"></a></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav_box_no1" style="border-bottom: 1px solid #e7e7e7;">
+                    <span class="nav_listitem_title"><i class="navlisticon" style="background-position-y: -673px"></i><a href="index.html" class="navlisttext">箱包馆</a></span>
+                    <p class="nav_listitem_doc">
+                        <a href="">男包</a><a href="">女包</a><a href="">旅行箱包</a><a href="">精品家</a>
+                    </p>
+                    <div class="nav_box_show" style="top:140px;">
+                        <div class="showbox_right">
+                            <i class="close_navbox_but"></i>
+                            <span class="showbox_img"><a href="index.html"></a></span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="body_topL_link">
+                <a href="index.html"><img src="image/topleftlink.jpg" alt=""></a>
+            </div>
+        </div>
+        <!--
+        --Banner轮播图
+        -->
+        <div class="index_body_topM">
+            <div class="banner_box">
+                <div id="banner_leftbut"></div>
+                <div id="banner_rightbut"></div>
+                <div class="banner_wrap">
+                    <ul class="banner_wrap1">
+                        <li class="banner_img"><a href=""><img src="image/banner01.jpg" alt=""></a></li>
+                        <li class="banner_img"><a href=""><img src="image/banner02.jpg" alt=""></a></li>
+                        <li class="banner_img"><a href=""><img src="image/banner03.jpg" alt=""></a></li>
+                        <li class="banner_img"><a href=""><img src="image/banner04.jpg" alt=""></a></li>
+                        <li class="banner_img"><a href=""><img src="image/banner05.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+                <p class="banner_listbox">
+                    <b class="banner_listbut on">1</b><b class="banner_listbut">2</b><b class="banner_listbut">3</b><b
+                        class="banner_listbut">4</b><b class="banner_listbut">5</b>
+                </p>
+            </div>
+            <div class="index_topAD_title">
+                <span>品牌活动</span>
+            </div>
+            <div class="index_topAD_list1">
+                <a href="index.html"><img src="image/topad1_1.jpg" class="index_topAD1_img"></a>
+                <a href="index.html"><img src="image/topad1_2.jpg" class="index_topAD1_img"></a>
+                <a href="index.html"><img src="image/topad1_3.jpg" class="index_topAD1_img"></a>
+            </div>
+            <div class="index_topAD_list2">
+                <a href="index.html"><img src="image/topad2_1.jpg" class="index_topAD2_img"></a>
+                <a href="index.html"><img src="image/topad2_2.jpg" class="index_topAD2_img"></a>
+                <a href="index.html"><img src="image/topad2_3.jpg" class="index_topAD2_img"></a>
+            </div>
+        </div>
+        <div class="index_body_topR">
+            <div class="body_topR_party">
+                <a href="index.html" class="topR_party_link">
+                    <span class="topR_party_pic btpa"></span>
+                    <p class="topR_party_text">会员专享</p>
+                </a>
+                <a href="index.html" class="topR_party_link">
+                    <span class="topR_party_pic btpb"></span>
+                    <p class="topR_party_text">领券</p>
+                </a>
+                <a href="index.html" class="topR_party_link">
+                    <span class="topR_party_pic btpc"></span>
+                    <p class="topR_party_text">去抽奖</p>
+                </a> 
+            </div>
+            <div class="body_topR_news">
+                <span class="topR_news_title"><b class="topR_news_titleb">拍鞋快报</b><a href="index.html" class="topR_news_more">更多></a></span>
+                <p class="topR_news_link">
+                    <a href="index.html" class="topR_news_linkitem">[活动] 特惠来袭,潮鞋清单低至49元!</a>
+                    <a href="index.html" class="topR_news_linkitem">[活动] 七夕浓情聚惠,低至1折起!</a>
+                    <a href="index.html" class="topR_news_linkitem">[公告] 今日特价上线!</a>
+                </p>
+            </div>
+            <div class="body_topR_banner">
+                <span class="topR_banner_box">
+                    <a href="" class="topR_banner_item"><img src="image/rightbanner1.jpg" alt=""></a>
+                    <a href="" class="topR_banner_item"><img src="image/rightbanner2.jpg" alt=""></a>
+                    <a href="" class="topR_banner_item"><img src="image/rightbanner3.jpg" alt=""></a>
+                </span>
+                <em class="topR_banner_number">1/3</em>
+            </div>
+            <div class="body_topR_title">
+                <a href="javascript:;" class="topR_hover_link thl">店内推荐</a>
+                <a href="javascript:;" class="topR_hover_link">热销品牌</a>
+            </div>
+            <div class="body_topR_animate">
+                <div class="topR_hover_banner">
+                    <a href="javascript:;" class="thb_link thbl01"><img src="image/hoverl1.jpg" alt=""></a>
+                    <a href="javascript:;" class="thb_link thbl02"><img src="image/hoverl2.jpg" alt=""></a>
+                    <a href="javascript:;" class="thb_link thbl03"><img src="image/hoverl3.jpg" alt=""></a>
+                </div>
+                <div class="topR_hover_banner thb">
+                    <a href="javascript:;" class="thb_link thbr01"><img src="image/hoverr1.jpg" alt=""></a>
+                    <a href="javascript:;" class="thb_link thbr02"><img src="image/hoverr2.jpg" alt=""></a>
+                    <a href="javascript:;" class="thb_link thbr03"><img src="image/hoverr3.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="index_body_lovetuan">
+        <div class="lovetuan_title">
+            <a href="" class="lovetuan_link">爱团购</a>
+            <div class="lovetuan_nav">
+                <b class="lovetuan_nav1">精品推荐</b>
+                <b class="lovetuan_nav1">
+                    <em class="lovetuan_nav_icon"></em>
+                    <em class="lovetuan_nav_text">新品上架</em>
+                </b>
+                <b class="lovetuan_icon"></b>
+            </div>
+            <a href="javascript:;" class="lovetuan_change">换一批</a>
+        </div>
+        <div class="lovetuan_list">
+            <ul class="lovetuan_list1">
+                <li class="lovetuan_list_item1">
+                    <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                    </a>
+                    <dd class="lovetuan_precent">
+                        <span class="showtime" data-time="2016-08-11 23:59:59">
+                            <ins class="precent_part"></ins>
+                            <i class="part_timetext">倒计时</i>
+                            <b class="part_timenumb">02天06:57:06</b>
+                        </span>
+                    </dd>
+                    <p class="lovetuan_list1_price">
+                        <del class="love_oldprice">¥299.00</del>|
+                        <ins class="love_newprice">¥88.00</ins>
+                    </p>
+                </li>
+                <li class="lovetuan_list_item1">
+                    <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                    </a>
+                    <dd class="lovetuan_precent">
+                        <span class="showtime" data-time="2016-08-11 23:59:59">
+                            <ins class="precent_part"></ins>
+                            <i class="part_timetext">倒计时</i>
+                            <b class="part_timenumb">02天06:57:06</b>
+                        </span>
+                    </dd>
+                    <p class="lovetuan_list1_price">
+                        <del class="love_oldprice">¥299.00</del>|
+                        <ins class="love_newprice">¥88.00</ins>
+                    </p>
+                </li>
+                <li class="lovetuan_list_item1">
+                    <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                    </a>
+                    <dd class="lovetuan_precent">
+                        <span class="showtime" data-time="2016-08-11 23:59:59">
+                            <ins class="precent_part"></ins>
+                            <i class="part_timetext">倒计时</i>
+                            <b class="part_timenumb">02天06:57:06</b>
+                        </span>
+                    </dd>
+                    <p class="lovetuan_list1_price">
+                        <del class="love_oldprice">¥299.00</del>|
+                        <ins class="love_newprice">¥88.00</ins>
+                    </p>
+                </li>
+                <li class="lovetuan_list_item1">
+                    <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                    </a>
+                    <dd class="lovetuan_precent">
+                        <span class="showtime" data-time="2016-08-11 23:59:59">
+                            <ins class="precent_part"></ins>
+                            <i class="part_timetext">倒计时</i>
+                            <b class="part_timenumb">02天06:57:06</b>
+                        </span>
+                    </dd>
+                    <p class="lovetuan_list1_price">
+                        <del class="love_oldprice">¥299.00</del>|
+                        <ins class="love_newprice">¥88.00</ins>
+                    </p>
+                </li>
+                <li class="lovetuan_list_item1">
+                    <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                    </a>
+                    <dd class="lovetuan_precent">
+                        <span class="showtime" data-time="2016-08-11 23:59:59">
+                            <ins class="precent_part"></ins>
+                            <i class="part_timetext">倒计时</i>
+                            <b class="part_timenumb">02天06:57:06</b>
+                        </span>
+                    </dd>
+                    <p class="lovetuan_list1_price">
+                        <del class="love_oldprice">¥299.00</del>|
+                        <ins class="love_newprice">¥88.00</ins>
+                    </p>
+                </li>
+                <li class="lovetuan_list_item1">
+                    <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                    </a>
+                    <dd class="lovetuan_precent">
+                        <span class="showtime" data-time="2016-08-11 23:59:59">
+                            <ins class="precent_part"></ins>
+                            <i class="part_timetext">倒计时</i>
+                            <b class="part_timenumb">02天06:57:06</b>
+                        </span>
+                    </dd>
+                    <p class="lovetuan_list1_price">
+                        <del class="love_oldprice">¥299.00</del>|
+                        <ins class="love_newprice">¥88.00</ins>
+                    </p>
+                </li>
+                <li class="lovetuan_list_item1">
+                    <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                    </a>
+                    <dd class="lovetuan_precent">
+                        <span class="showtime" data-time="2016-08-11 23:59:59">
+                            <ins class="precent_part"></ins>
+                            <i class="part_timetext">倒计时</i>
+                            <b class="part_timenumb">02天06:57:06</b>
+                        </span>
+                    </dd>
+                    <p class="lovetuan_list1_price">
+                        <del class="love_oldprice">¥299.00</del>|
+                        <ins class="love_newprice">¥88.00</ins>
+                    </p>
+                </li>
+                <li class="lovetuan_list_item1">
+                    <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                    </a>
+                    <dd class="lovetuan_precent">
+                        <span class="showtime" data-time="2016-08-11 23:59:59">
+                            <ins class="precent_part"></ins>
+                            <i class="part_timetext">倒计时</i>
+                            <b class="part_timenumb">02天06:57:06</b>
+                        </span>
+                    </dd>
+                    <p class="lovetuan_list1_price">
+                        <del class="love_oldprice">¥299.00</del>|
+                        <ins class="love_newprice">¥88.00</ins>
+                    </p>
+                </li>
+                <li class="lovetuan_list_item1">
+                    <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                    </a>
+                    <dd class="lovetuan_precent">
+                        <span class="showtime" data-time="2016-08-11 23:59:59">
+                            <ins class="precent_part"></ins>
+                            <i class="part_timetext">倒计时</i>
+                            <b class="part_timenumb">02天06:57:06</b>
+                        </span>
+                    </dd>
+                    <p class="lovetuan_list1_price">
+                        <del class="love_oldprice">¥299.00</del>|
+                        <ins class="love_newprice">¥88.00</ins>
+                    </p>
+                </li>
+                <li class="lovetuan_list_item1">
+                    <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                    </a>
+                    <dd class="lovetuan_precent">
+                        <span class="showtime" data-time="2016-08-11 23:59:59">
+                            <ins class="precent_part"></ins>
+                            <i class="part_timetext">倒计时</i>
+                            <b class="part_timenumb">02天06:57:06</b>
+                        </span>
+                    </dd>
+                    <p class="lovetuan_list1_price">
+                        <del class="love_oldprice">¥299.00</del>|
+                        <ins class="love_newprice">¥88.00</ins>
+                    </p>
+                </li>
+                <li class="lovetuan_list_item1">
+                    <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                    </a>
+                    <dd class="lovetuan_precent">
+                        <span class="showtime" data-time="2016-08-11 23:59:59">
+                            <ins class="precent_part"></ins>
+                            <i class="part_timetext">倒计时</i>
+                            <b class="part_timenumb">02天06:57:06</b>
+                        </span>
+                    </dd>
+                    <p class="lovetuan_list1_price">
+                        <del class="love_oldprice">¥299.00</del>|
+                        <ins class="love_newprice">¥88.00</ins>
+                    </p>
+                </li>
+                <li class="lovetuan_list_item1">
+                    <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                    </a>
+                    <dd class="lovetuan_precent">
+                        <span class="showtime" data-time="2016-08-11 23:59:59">
+                            <ins class="precent_part"></ins>
+                            <i class="part_timetext">倒计时</i>
+                            <b class="part_timenumb">02天06:57:06</b>
+                        </span>
+                    </dd>
+                    <p class="lovetuan_list1_price">
+                        <del class="love_oldprice">¥299.00</del>|
+                        <ins class="love_newprice">¥88.00</ins>
+                    </p>
+                </li>
+            </ul>
+            <ul class="lovetuan_list1 lovetuan_list_none">
+                <li class="lovetuan_list_item2">
+                    <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                    </a>
+                    <dd class="lovetuan_precent">
+                        <span class="showtime" data-time="2016-08-11 23:59:59">
+                            <ins class="precent_part"></ins>
+                            <i class="part_timetext">倒计时</i>
+                            <b class="part_timenumb">02天06:57:06</b>
+                        </span>
+                    </dd>
+                    <p class="lovetuan_list1_price">
+                        <del class="love_oldprice">¥299.00</del>|
+                        <ins class="love_newprice">¥88.00</ins>
+                    </p>
+                </li>
+                <li class="lovetuan_list_item2">
+                    <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                    </a>
+                    <dd class="lovetuan_precent">
+                        <span class="showtime" data-time="2016-08-11 23:59:59">
+                            <ins class="precent_part"></ins>
+                            <i class="part_timetext">倒计时</i>
+                            <b class="part_timenumb">02天06:57:06</b>
+                        </span>
+                    </dd>
+                    <p class="lovetuan_list1_price">
+                        <del class="love_oldprice">¥299.00</del>|
+                        <ins class="love_newprice">¥88.00</ins>
+                    </p>
+                </li>
+                <li class="lovetuan_list_item2">
+                    <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                    </a>
+                    <dd class="lovetuan_precent">
+                        <span class="showtime" data-time="2016-08-11 23:59:59">
+                            <ins class="precent_part"></ins>
+                            <i class="part_timetext">倒计时</i>
+                            <b class="part_timenumb">02天06:57:06</b>
+                        </span>
+                    </dd>
+                    <p class="lovetuan_list1_price">
+                        <del class="love_oldprice">¥299.00</del>|
+                        <ins class="love_newprice">¥88.00</ins>
+                    </p>
+                </li>
+                <li class="lovetuan_list_item2">
+                    <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                    </a>
+                    <dd class="lovetuan_precent">
+                        <span class="showtime" data-time="2016-08-11 23:59:59">
+                            <ins class="precent_part"></ins>
+                            <i class="part_timetext">倒计时</i>
+                            <b class="part_timenumb">02天06:57:06</b>
+                        </span>
+                    </dd>
+                    <p class="lovetuan_list1_price">
+                        <del class="love_oldprice">¥299.00</del>|
+                        <ins class="love_newprice">¥88.00</ins>
+                    </p>
+                </li>
+                <li class="lovetuan_list_item2">
+                    <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                    </a>
+                    <dd class="lovetuan_precent">
+                        <span class="showtime" data-time="2016-08-11 23:59:59">
+                            <ins class="precent_part"></ins>
+                            <i class="part_timetext">倒计时</i>
+                            <b class="part_timenumb">02天06:57:06</b>
+                        </span>
+                    </dd>
+                    <p class="lovetuan_list1_price">
+                        <del class="love_oldprice">¥299.00</del>|
+                        <ins class="love_newprice">¥88.00</ins>
+                    </p>
+                </li>
+                <li class="lovetuan_list_item2">
+                    <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                    </a>
+                    <dd class="lovetuan_precent">
+                        <span class="showtime" data-time="2016-08-11 23:59:59">
+                            <ins class="precent_part"></ins>
+                            <i class="part_timetext">倒计时</i>
+                            <b class="part_timenumb">02天06:57:06</b>
+                        </span>
+                    </dd>
+                    <p class="lovetuan_list1_price">
+                        <del class="love_oldprice">¥299.00</del>|
+                        <ins class="love_newprice">¥88.00</ins>
+                    </p>
+                </li>
+                <li class="lovetuan_list_item2">
+                    <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                    </a>
+                    <dd class="lovetuan_precent">
+                        <span class="showtime" data-time="2016-08-11 23:59:59">
+                            <ins class="precent_part"></ins>
+                            <i class="part_timetext">倒计时</i>
+                            <b class="part_timenumb">02天06:57:06</b>
+                        </span>
+                    </dd>
+                    <p class="lovetuan_list1_price">
+                        <del class="love_oldprice">¥299.00</del>|
+                        <ins class="love_newprice">¥88.00</ins>
+                    </p>
+                </li>
+                <li class="lovetuan_list_item2">
+                    <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                    </a>
+                    <dd class="lovetuan_precent">
+                        <span class="showtime" data-time="2016-08-11 23:59:59">
+                            <ins class="precent_part"></ins>
+                            <i class="part_timetext">倒计时</i>
+                            <b class="part_timenumb">02天06:57:06</b>
+                        </span>
+                    </dd>
+                    <p class="lovetuan_list1_price">
+                        <del class="love_oldprice">¥299.00</del>|
+                        <ins class="love_newprice">¥88.00</ins>
+                    </p>
+                </li>
+                <li class="lovetuan_list_item2">
+                    <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                    </a>
+                    <dd class="lovetuan_precent">
+                        <span class="showtime" data-time="2016-08-11 23:59:59">
+                            <ins class="precent_part"></ins>
+                            <i class="part_timetext">倒计时</i>
+                            <b class="part_timenumb">02天06:57:06</b>
+                        </span>
+                    </dd>
+                    <p class="lovetuan_list1_price">
+                        <del class="love_oldprice">¥299.00</del>|
+                        <ins class="love_newprice">¥88.00</ins>
+                    </p>
+                </li>
+                <li class="lovetuan_list_item2">
+                    <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                    </a>
+                    <dd class="lovetuan_precent">
+                        <span class="showtime" data-time="2016-08-11 23:59:59">
+                            <ins class="precent_part"></ins>
+                            <i class="part_timetext">倒计时</i>
+                            <b class="part_timenumb">02天06:57:06</b>
+                        </span>
+                    </dd>
+                    <p class="lovetuan_list1_price">
+                        <del class="love_oldprice">¥299.00</del>|
+                        <ins class="love_newprice">¥88.00</ins>
+                    </p>
+                </li>
+                <li class="lovetuan_list_item2">
+                    <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                    </a>
+                    <dd class="lovetuan_precent">
+                        <span class="showtime" data-time="2016-08-11 23:59:59">
+                            <ins class="precent_part"></ins>
+                            <i class="part_timetext">倒计时</i>
+                            <b class="part_timenumb">02天06:57:06</b>
+                        </span>
+                    </dd>
+                    <p class="lovetuan_list1_price">
+                        <del class="love_oldprice">¥299.00</del>|
+                        <ins class="love_newprice">¥88.00</ins>
+                    </p>
+                </li>
+                <li class="lovetuan_list_item2">
+                    <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                    </a>
+                    <dd class="lovetuan_precent">
+                        <span class="showtime" data-time="2016-08-11 23:59:59">
+                            <ins class="precent_part"></ins>
+                            <i class="part_timetext">倒计时</i>
+                            <b class="part_timenumb">02天06:57:06</b>
+                        </span>
+                    </dd>
+                    <p class="lovetuan_list1_price">
+                        <del class="love_oldprice">¥299.00</del>|
+                        <ins class="love_newprice">¥88.00</ins>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--楼层1-----------------------------------------------户外运动-------->
+    <div class="floor outsport">
+        <div class="floor_title">
+            <a href="javascript:;" target="_blank" class="floor_more" title="更多">更多</a>
+            <i class="floor_icon floor1_icon_color">F1</i>
+            <h2 class="floor_title_name">运动 <i>|</i> 户外</h2>
+            <span class="floor_nav">
+								<a href="javascript:;"  class="floor_nav_list floor0_nav_color">潮牌新品</a>
+								<a href="javascript:;"  class="floor_nav_list">人气跑鞋</a>
+								<a href="javascript:;"  class="floor_nav_list">百搭板鞋</a>
+								<b class="fnl_pointer floor_line1"></b>
+			</span>
+        </div>
+        <div class="floor_list skin1">
+            <div class="floor_left_bar">
+                <a href="" target="_blank" class="fl_bar_img"></a>
+                <div class="fl_bar_a">
+                    <span class="fl_bar_tit">热卖</span>
+					<span class="fl_bar_list">
+                        <a href="" target="_blank">跑步鞋</a>
+                        <a href="" target="_blank">N字鞋</a>
+                        <a href="" target="_blank">篮球鞋</a>
+                        <a href="" target="_blank">运动双肩包</a>
+                        <a href="" target="_blank">AIR MAX</a>
+                        <a href="" target="_blank">运动T恤</a>
+                        <a href="" target="_blank">休闲鞋</a>
+                        <a href="" target="_blank">登山鞋</a>
+                        <a href="" target="_blank">户外鞋</a>
+                    </span>
+                    <a href="javascript:;" class="bar_open" id="bar_open"><i class=""></i></a>
+                </div>
+                <div class="fl_ bar_b">
+                    <span class="fl_bar_tit">特色</span>
+					<span  class="fl_bar_list">
+                        <a href="" target="_blank">减震</a>
+                        <a href="" target="_blank">防滑</a>
+                        <a href="" target="_blank">耐磨</a>
+                        <a href="" target="_blank">透气</a>
+                        <a href="" target="_blank">缓冲</a>
+                        <a href="" target="_blank">气垫</a>
+                        <a href="" target="_blank">反绒皮</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="floor_link"></div>
+    </div>
+    <!--楼层2----------------------------------------------女鞋女装-------->
+    <div class="floor girlshose">
+        <div class="floor_title">
+            <a href="javascript:;" target="_blank" class="floor_more" title="更多">更多</a>
+            <i class="floor_icon floor2_icon_color">F2</i>
+            <h2 class="floor_title_name">女鞋 <i>|</i> 女装</h2>
+            <span class="floor_nav">
+								<a href="javascript:;"  class="floor_nav_list floor1_nav_color">摩登女神</a>
+								<a href="javascript:;"  class="floor_nav_list">人气凉鞋</a>
+								<a href="javascript:;"  class="floor_nav_list">青春帆布</a>
+								<b class="fnl_pointer floor_line2"></b>
+			</span>
+        </div>
+        <div class="floor_list"></div>
+        <div class="floor_link"></div>
+    </div>
+    <!--楼层3----------------------------------------------男鞋男装-------->
+    <div class="floor boyshose">
+        <div class="floor_title">
+            <a href="javascript:;" target="_blank" class="floor_more" title="更多">更多</a>
+            <i class="floor_icon floor3_icon_color">F3</i>
+            <h2 class="floor_title_name">男鞋 <i>|</i> 男装</h2>
+            <span class="floor_nav">
+								<a href="javascript:;"  class="floor_nav_list floor2_nav_color">型男必备</a>
+								<a href="javascript:;"  class="floor_nav_list">休闲鞋</a>
+								<a href="javascript:;"  class="floor_nav_list">型格凉鞋</a>
+								<b class="fnl_pointer floor_line3"></b>
+			</span>
+        </div>
+        <div class="floor_list"></div>
+        <div class="floor_link"></div>
+    </div>
+    <!--楼层4----------------------------------------------童鞋童装-------->
+    <div class="floor chileshose">
+        <div class="floor_title">
+            <a href="javascript:;" target="_blank" class="floor_more" title="更多">更多</a>
+            <i class="floor_icon floor4_icon_color">F4</i>
+            <h2 class="floor_title_name">童鞋 <i>|</i> 童装</h2>
+            <span class="floor_nav">
+								<a href="javascript:;"  class="floor_nav_list floor3_nav_color">童鞋尚新</a>
+								<a href="javascript:;"  class="floor_nav_list">潮童风采</a>
+								<a href="javascript:;"  class="floor_nav_list">运动鞋</a>
+								<b class="fnl_pointer floor_line4"></b>
+			</span>
+        </div>
+        <div class="floor_list"></div>
+        <div class="floor_link"></div>
+    </div>
+    <!--楼层5----------------------------------------------箱包家纺-------->
+    <div class="floor fashionbag">
+        <div class="floor_title">
+            <a href="javascript:;" target="_blank" class="floor_more" title="更多">更多</a>
+            <i class="floor_icon floor5_icon_color">F5</i>
+            <h2 class="floor_title_name">箱包 <i>|</i> 家纺</h2>
+            <span class="floor_nav">
+								<a href="javascript:;"  class="floor_nav_list floor4_nav_color">引领时尚</a>
+								<a href="javascript:;"  class="floor_nav_list">魅力女包</a>
+								<a href="javascript:;"  class="floor_nav_list">床上用品</a>
+								<b class="fnl_pointer floor_line5"></b>
+			</span>
+        </div>
+        <div class="floor_list"></div>
+        <div class="floor_link"></div>
+    </div>
+    <!---->
+</div>
+
+
+
+<script src="js/index.js"></script>
+<script src="js/banner.js"></script>
+</body>
+</html>

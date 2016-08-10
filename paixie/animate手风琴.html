@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>animal动画</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;}
+        .box{
+            height:260px;
+        }
+        .pic{
+            height: 260px;
+            width: 200px;
+            overflow: hidden;
+            float: left;
+        }
+        .mask{
+            height:260px;
+            width: 100%;
+            font:24px/30px "微软雅黑";
+            background: rgba(0,0,0,0.5);
+        }
+        .mask p{
+            display: block;
+            height:160px;
+            width:30px;
+            font: 24px/35px '宋体';
+            font-weight: 700;
+            color: #FFF;
+            position: relative;
+            top: 50px;
+            left:50%;
+            margin-left: -15px;
+            
+        }
+    </style>
+</head>
+<body>
+<ul class="box">
+    <li class="pic" style="background: url(img2/1.jpg) no-repeat center;">
+        <div class="mask">
+            <p>园林风光</p>
+        </div>
+    </li>
+    <li class="pic" style="background: url(img2/2.jpg) no-repeat center;">
+        <div class="mask">
+            <p>参禅悟道</p>
+        </div>
+    </li>
+    <li class="pic" style="background: url(img2/3.jpg) no-repeat center;">
+        <div class="mask">
+            <p>时尚都市</p>
+        </div>
+    </li>
+    <li class="pic" style="background: url(img2/4.jpg) no-repeat center;">
+        <div class="mask">
+            <p>古韵遗风</p>
+        </div>
+    </li>
+    <li class="pic" style="background: url(img2/5.jpg) no-repeat center;">
+        <div class="mask">
+            <p>海滨景色</p>
+        </div>
+    </li>
+    <li class="pic" style="background: url(img2/6.jpg) no-repeat center;">
+        <div class="mask">
+            <p>高原雪景</p>
+        </div>
+    </li>
+</ul>
+<script src="js/jquery-1.12.4.js"></script>
+<script>
+    $(".pic").hover(function(){
+        $(this).stop().animate({width:400},300);
+        $(this).siblings().stop().animate({width:160},300);
+        $(this).children(".mask").hide();
+        },function(){
+        $(".pic").stop().animate({width:200},300);
+        $(".pic").children(".mask").show();
+    });
+</script>
+</body>
+</html>

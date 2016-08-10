@@ -1,0 +1,19 @@
+{
+  "title":[{"t0":"热销品牌"},{"t1":"热卖推荐"},{"t2":"男装"},{"t3":"女装"},{"t4":"春季单品"}],
+  "urlist":[
+    {"u0":"index.html","u1":"index.html","u2":"index.html","u3":"index.html","u4":"index.html","u5":"index.html","u6":"index.html"},
+    {"u0":"index.html","u1":"index.html","u2":"index.html","u3":"index.html","u4":"index.html","u5":"index.html"},
+    {"u0":"index.html","u1":"index.html","u2":"index.html","u3":"index.html","u4":"index.html","u5":"index.html"},
+    {"u0":"index.html","u1":"index.html","u2":"index.html","u3":"index.html","u4":"index.html","u5":"index.html","u6":"index.html"},
+    {"u0":"index.html","u1":"index.html","u2":"index.html","u3":"index.html"}
+  ],
+  "list":[
+    {"a0":"泰芝郎","a1":"斯鑫明","a2":"克里西蒙","a3":"Qigirl","a4":"丹雷斯","a5":"唯唯","a6":"戈佳妮"},
+    {"a0":"连衣裙","a1":"T恤","a2":"衬衫","a3":"短裤","a4":"牛仔裤","a5":"文胸"},
+    {"a0":"T恤", "a1":"衬衫","a2":"POLO衫","a3":"背心","a4":"牛仔裤","a5":"休闲裤"},
+    {"a0":"夏上新","a1":"衬衫","a2":"T恤","a3":"半身裙","a4":"连衣裙","a5":"针织衫", "a6":"风衣"},
+    {"a0":"童装","a1":"POLO衫","a2":"牛仔裤","a3":"睡衣/家居服"}
+  ],
+
+  "image":"image/navboxshow04.jpg"
+}

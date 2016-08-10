@@ -1,0 +1,22 @@
+{
+  "title":[{"t0":"热销品牌"},{"t1":"热门推荐"},{"t2":"凉鞋"},{"t3":"休闲鞋"},{"t4":"精品皮鞋"},{"t5":"价格搜索区间"}],
+  "urlist":[
+    {"u0":"index.html","u1":"index.html","u2":"index.html","u3":"index.html","u4":"index.html","u5":"index.html","u6":"index.html"},
+    {"u0":"index.html","u1":"index.html","u2":"index.html","u3":"index.html","u4":"index.html","u5":"index.html"},
+    {"u0":"index.html","u1":"index.html","u2":"index.html","u3":"index.html"},
+    {"u0":"index.html","u1":"index.html","u2":"index.html"},
+    {"u0":"index.html","u1":"index.html","u2":"index.html","u3":"index.html","u4":"index.html"},
+    {"u0":"index.html","u1":"index.html","u2":"index.html","u3":"index.html","u4":"index.html"}
+  ],
+  "list":[
+    {"a0":"富贵鸟","a1":"古莱德","a2":"奥康","a3":"米斯康","a4":"公羊","a5":"卡足帝","a6":"布拉泽"},
+    {"a0":"凉鞋","a1":"新品","a2":"精品皮鞋","a3":"休闲鞋","a4":"拖鞋","a5":"增高鞋"},
+    {"a0":"露趾","a1":"头层牛皮","a2":"魔术贴","a3":"松紧带"},
+    {"a0":"系带", "a1":"套脚","a2":"英伦风"},
+    {"a0":"软面皮","a1":"车缝线","a2":"皮革拼接","a3":"平跟","a4":"内增高"},
+    {"a0":"0-99","a1":"100-199","a2":"200-299","a3":"300-399","a4":"400-499"}
+  ],
+
+
+  "image":"image/navboxshow03.jpg"
+}
