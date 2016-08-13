@@ -14,7 +14,7 @@ html, body {min-width: 980px;}
 .reg_box .reg_form .it_focusr{border-color:#6cb8df;box-shadow: 0 0 1px 0 #7fcaf1;}
 .reg_box .reg_form .it_focuse{border-color:#e46666;box-shadow: 0 0 1px 0 #f37c7c;}
 .reg_name,.reg_pwd1,.reg_pwd2,.phonecode{ width:670px;  height: 66px;}
-.ll{font:14px/36px "宋体";text-align: right;  width: 80px;  font-size: 14px;  display: inline-block;}
+.ll{font:14px/36px "宋体";text-align: right;  width: 80px;  display: inline-block;}
 .textbox{  border: 1px solid #dadada;  display: inline-block;  vertical-align: middle;  width: 290px;  position: relative;  height: 36px;  line-height: 36px;  margin: 5px;}
 .putin{ border: 0 none;padding: 5px 28px 5px 0;line-height: 26px;overflow: hidden;width: 257px;margin-left: 5px;position: absolute;left: 0;top: 0;outline:none;color: #333;font-size: 16px; z-index: 30;background: none;}
 .infor{  padding-left: 5px;  position: absolute;  top: 0px;  left: 0px;  color: rgb(183, 183, 183);  font-size: 14px; z-index: 20}
@@ -30,7 +30,7 @@ html, body {min-width: 980px;}
 .errorshow{
     display: inline-block;
     position: absolute;
-    line-height: 36px;
+    font:14px/36px "Microsoft YaHei";
     height: 36px;
     width:270px;
     top:-1px;
@@ -39,10 +39,17 @@ html, body {min-width: 980px;}
     color: rgb(102, 102, 102);
     border-width: 1px;
     border-style: solid;
-    background: rgb(238, 249, 255);
-    border-color: rgb(221, 243, 255);
     z-index: 30;
 }
+.color_r{
+    background: #eef9ff;
+    border-color: #ddf3ff;
+}
+.color_e{
+    background: #fdeaea;
+    border-color: #f9dddd;
+}
+
 .goodinfor{
     background: rgb(238, 249, 255);
     border-color: rgb(221, 243, 255);}
@@ -100,7 +107,8 @@ html, body {min-width: 980px;}
     padding: 8px 28px 8px 0;
     overflow: hidden;
     outline: none;
-    z-index: 10;
+    z-index: 40;
+    background: none;
 }
 
 
@@ -128,8 +136,28 @@ html, body {min-width: 980px;}
     background: rgb(245, 245, 245);
 }
 
-
-
+.successbox{
+    height:100%;
+    width:100%;
+    position: fixed;
+    background: rgb(0,0,0);
+    z-index:900;
+    opacity:0.3;
+    top:0;
+    left:0;
+}
+.successtxt{
+    display:block;
+    height:40px;
+    width:300px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top:-50px;
+    margin-left:-150px;
+    color:#fa5000;
+    font:24px/40px "Microsoft YaHei";
+}
 
 
 
@@ -145,7 +173,8 @@ html, body {min-width: 980px;}
 .reg_read label input{display: inline-block;vertical-align: middle;}
 .reg_read a{font: 12px/22px "Microsoft YaHei";}
 .reg_read a:hover{text-decoration: underline;}
-.reg_button{dispaly:block;}
+.reg_button{display:block;}
+.reg_button:hover{opacity: 0.8}
 .go_but{
     display: inline-block;
     height: 40px;
@@ -158,6 +187,28 @@ html, body {min-width: 980px;}
     position: relative;
     background: rgb(4, 135, 223);
     border-radius: 2px;
-    padding: 0px 10px;
-    margin: 14px 0px 0px 85px;
+    padding: 0 10px;
+    margin: 14px 0 0 85px;
 }
+
+
+.reg_right{
+    color: #919191;
+    float: left;
+    display: inline;
+    margin-left: 30px;
+    font: 12px/40px "Microsoft YaHei";
+}
+.reg_right a{
+    display: inline-block;
+    vertical-align: middle;
+    width: 100px;
+    height: 25px;
+    line-height: 25px;
+    color: #fff;
+    text-indent: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+    background: url("../image/login01.png") no-repeat -118px 0;
+}
+.reg_right a:hover{text-decoration: underline;}
