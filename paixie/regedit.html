@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/regedit.css">
+</head>
+<body>
+<div class="reg_head">
+    <a href="http://www.paixie.net/" class="logo"></a><h1 class="reg_tit">欢迎注册</h1>
+</div>
+
+<div class="reg_box">
+    <div class="reg_form">
+        <div class="reg_name">
+            <label class="ll" for="u_name">账户名:</label>
+            <div class="textbox">
+                <span class="infor">邮箱/手机号</span>
+                <input type="text" class="putin" id="u_name">
+                <span class="errorshow goodinfor "></span>
+            </div>
+            <i class="right_show"></i>
+        </div>
+        <!------------------------设置密码--------------------------------------->
+        <div class="reg_pwd1">
+            <label class="ll" for="pwd1">设置密码:</label>
+            <div class="textbox">
+                <input type="password" class="putin" id="pwd1">
+                <span class="errorshow"></span>
+                <div class="pwd_strong">
+                    <span class="leave">弱</span>
+                    <span class="leave">中</span>
+                    <span class="leave">强</span>
+                </div>
+            </div>
+            <i class="right_show"></i>
+        </div>
+        <!----------------------------------------确认密码-------------------------------------------------------->
+        <div class="reg_pwd2">
+            <label class="ll" for="pwd2">确认密码:</label>
+            <div class="textbox">
+                <input type="password" class="putin" id="pwd2">
+                <span class="errorshow"></span>
+            </div>
+            <i class="right_show"></i>
+        </div>
+        <!--------------------------------------   验证码                 ------------------------------------------------------------>
+        <div class="phonecode">
+            <label class="ll">验证码：</label>
+            <div class="codebox">
+                <span class="codeshow">验证码</span>
+                <input type="text" class="codetext">
+                <a class="base-close"></a>
+            </div>
+            <a class="getcode_but" ><span>获取短信验证码</span>
+                <span class="errorshow badinfor" style="width:150px;right:-153px"></span>
+            </a>
+            <i class="right_show"></i>
+        </div>
+        <!-----------------------------------    注册按钮          ----------------------->
+        <div class="reg_read">
+            <label>
+                <input type="checkbox" checked="checked" class="agreement">
+                我已阅读并同意
+            </label>
+            <a href="/servicepolicy.html" target="_blank">《拍鞋服务协议》</a>
+        </div>
+        <div class="reg_button">
+            <a href="javascript:;" class="go_but">立即注册</a>
+        </div>
+    </div>
+    <div class="reg_right"></div>
+
+
+</div>
+
+<script src="js/jquery-1.12.4.min.js"></script>
+<script>
+    $("document").ready(function(){
+        $(".errorshow").css({display:'none'});
+        $(".right_show").css({display:'none'});
+        $(".pwd_strong").css({display:'none'});
+        $(".phonecode").css({display:'none'});
+        var bugarr = [
+            "请输入邮箱/手机号",
+            "邮箱/手机格式错误",
+            "该手机已存在，请更换手机！",
+            "6-20位字符,可使用字母,数字或符号的组合",
+            "密码长度只能在6-20位字符之间",
+            "密码太简单，请您更改密码，如字母+数字的组合",
+            "请再次输入密码",
+            "密码不能为空",
+            "再次输入的密码不一致",
+            "验证码不一致"
+        ];
+        var times = [0,0,0,0]; //各个输入框的输入状态
+        var flag = [false,false,false,false];
+        var regname = /^1[34578]\d{9}$/;
+        $("#u_name").focus(function(){
+            console.log("聚焦");
+            $(this).parent().addClass("it_focusr");
+            $(this).parent().removeClass("it_focuse");
+            $(this).siblings(".infor").css({display:"none"});
+            if(!flag[0]){
+                $(this).siblings(".errorshow").css({display:"inline-block"});
+                $(this).siblings(".errorshow").html(bugarr[0]);
+            }else{
+                $(this).children(".errorshow").css({display:"none"});
+                $(this).children(".right_show").html(bugarr[0]);
+                $(this).children(".right_show").css({display:"inline-block"});
+
+            }
+        }).blur(function(){
+            if($(this).val()){
+                if(times[0]==0)times[0]+=1;
+                $(this).parent().removeClass("it_focusr");
+                $(this).parent().addClass("it_focuse");
+                flag[0]=false;
+            }else{
+                if(times[0]==0){
+                    $(this).siblings(".errorshow").css({display:"none"});
+                    $(this).parent().removeClass("it_focusr");
+                    $(this).parent().removeClass("it_focuse");
+                    $(this).siblings(".infor").css({display:"inline"});
+                }
+            }
+        })
+
+    })
+</script>
+
+
+</body>
+</html>

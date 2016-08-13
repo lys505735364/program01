@@ -5,33 +5,37 @@
     <title>拍鞋网商城首页_欧内专业品牌鞋服购物网站_买鞋子 就上拍鞋网!</title>
     <meta name="keyword" content="拍鞋网,拍鞋网官方网站,拍鞋网商城"/>
     <meta name="descripaion" content="买鞋子那个网店好,当然首选拍鞋网!中国最早成立的正品鞋服购物网站,国内最专业的品牌鞋服在线商城.所售鞋服100%厂家授权,全国包邮,货到付款,提供最完美的购物体验!"/>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/public.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/ajax.js"></script>
 </head>
-<link rel="stylesheet" href="css/public.css">
-<link rel="stylesheet" href="css/index.css">
-<script src="js/jquery-1.12.4.min.js"></script>
-<script src="js/ajax.js"></script>
+
 <body>
-<!--
---左侧楼层菜单
--->
+<!----左侧楼层菜单-->
 <ul class="index_leftBar" id="index_left" style="display:none;">
-    <li class="Floor_1"><span id="aaa1" style="visibility: visible">运动户外</span></li>
-    <li class="Floor_2"><span style="visibility: hidden">女鞋女装</span></li>
-    <li class="Floor_3"><span style="visibility: hidden">男鞋男装</span></li>
-    <li class="Floor_4"><span style="visibility: visible">童鞋童装</span></li>
-    <li class="Floor_5"><span style="visibility: hidden">箱包家纺</span></li>
+    <li class="Floor_li"><span id="aaa1" class="leftbarshow">运动户外</span></li>
+    <li class="Floor_li"><span id="aaa2" class="leftbarshow">女鞋女装</span></li>
+    <li class="Floor_li"><span id="aaa3" class="leftbarshow">男鞋男装</span></li>
+    <li class="Floor_li"><span id="aaa4" class="leftbarshow">童鞋童装</span></li>
+    <li class="Floor_li"><span id="aaa5" class="leftbarshow">箱包家纺</span></li>
 </ul>
-<!--
---右侧常驻功能菜单
--->
-<div class="index_rightBar" id="index_right" style="display:none;"></div>
-<!--
---吸顶菜单
--->
-<div class="Scroll_TopBar" id="Scroll_top"></div>
-<!--
---最顶部
--->
+<!----右侧常驻功能菜单-->
+<div class="index_rightBar" id="index_right"></div>
+<!----吸顶菜单-->
+<div class="Scroll_TopBar" id="Scroll_top">
+    <div class="All_shop_list scrolltop_nav_title"><i class="shop_list_icon"></i><span class="shop_list_title">全部商品分类</span>
+        <div class="top_scroll_nav">
+            <ul id="scrolltop_nav_ul">
+             <!---->
+            </ul>
+
+        </div>
+    </div>
+
+
+</div>
+<!----最顶部-->
 <div class="index_Head_Head">
     <div class="index_Head" id="index_Head">
         <div class="index_Head_nav">
@@ -45,12 +49,12 @@
             </div>
             <div class="index_Head_navR">
             <span class="index_Cart">
-                <a href=""><em class="index_Cart_Icon"></em> <em class="index_Cart_link">购物车</em><em id="index_Cart_Count"></em></a>
+                <a href="javascript:;"><em class="index_Cart_Icon"></em> <em class="index_Cart_link">购物车</em><em id="index_Cart_Count"></em></a>
                 <ul class="index_CartList"></ul>
             </span>
                 <i>|</i>
             <span class="index_MyPX">
-                <a href="" class="index_MyPX_Link">我的拍鞋 <em class="index_MyPX_Icon"></em></a>
+                <a href="javascript:;" class="index_MyPX_Link">我的拍鞋 <em class="index_MyPX_Icon"></em></a>
                 <ul class="index_MyPX_list">
                     <li class="mypx_list_item"><a href="index.html" class="mypx_list_link">我的订单</a></li>
                     <li class="mypx_list_item"><a href="index.html" class="mypx_list_link">我的收藏</a></li>
@@ -59,11 +63,11 @@
             </span>
                 <i>|</i>
             <span class="index_NewsLink">
-                <a href="">消息 <em id="index_NewsCount"></em></a>
+                <a href="javascript:;">消息 <em id="index_NewsCount"></em></a>
             </span>
                 <i>|</i>
             <span class="User_VIPClub">
-                <a href="">会员俱乐部</a>
+                <a href="javascript:;">会员俱乐部</a>
             </span>
                 <i>|</i>
             <span class="Web_Nav">
@@ -133,7 +137,7 @@
                 <li class="nav_box_no1">
                     <span class="nav_listitem_title"><i class="navlisticon"></i><a href="index.html" class="navlisttext">运动馆</a></span>
                     <p class="nav_listitem_doc">
-                        <a href="">板鞋</a><a href="">跑步鞋</a><a href="">休闲鞋</a><a href="">篮球鞋</a>
+                        <a href="javascript:;">板鞋</a><a href="javascript:;">跑步鞋</a><a href="javascript:;">休闲鞋</a><a href="javascript:;">篮球鞋</a>
                     </p>
                     <div class="nav_box_show">
                         <div class="showbox_right">
@@ -145,7 +149,7 @@
                 <li class="nav_box_no1">
                     <span class="nav_listitem_title"><i class="navlisticon" style="background-position-y: -445px"></i><a href="index.html" class="navlisttext">女鞋馆</a></span>
                     <p class="nav_listitem_doc">
-                        <a href="">夏季新品</a><a href="">凉鞋</a><a href="">单鞋</a><a href="">休闲鞋</a>
+                        <a href="javascript:;">夏季新品</a><a href="javascript:;">凉鞋</a><a href="javascript:;">单鞋</a><a href="javascript:;">休闲鞋</a>
                     </p>
                     <div class="nav_box_show">
                         <div class="showbox_right">
@@ -156,7 +160,7 @@
                 <li class="nav_box_no1">
                     <span class="nav_listitem_title"><i class="navlisticon" style="background-position-y: -491px"></i><a href="index.html" class="navlisttext">男鞋馆</a></span>
                     <p class="nav_listitem_doc">
-                        <a href="">凉鞋</a><a href="">休闲鞋</a><a href="">帆布鞋</a><a href="">豆豆鞋</a>
+                        <a href="javascript:;">凉鞋</a><a href="javascript:;">休闲鞋</a><a href="javascript:;">帆布鞋</a><a href="javascript:;">豆豆鞋</a>
                     </p>
                     <div class="nav_box_show">
                         <div class="showbox_right">
@@ -168,7 +172,7 @@
                 <li class="nav_box_no1">
                     <span class="nav_listitem_title"><i class="navlisticon" style="background-position-y: -577px"></i><a href="index.html" class="navlisttext">服饰馆</a></span>
                     <p class="nav_listitem_doc">
-                        <a href="">女装</a><a href="">男装</a><a href="">人气美裙</a><a href="">牛仔短</a>
+                        <a href="javascript:;">女装</a><a href="javascript:;">男装</a><a href="javascript:;">人气美裙</a><a href="javascript:;">牛仔短</a>
                     </p>
                     <div class="nav_box_show">
                         <div class="showbox_right">
@@ -180,7 +184,7 @@
                 <li class="nav_box_no1">
                     <span class="nav_listitem_title"><i class="navlisticon" style="background-position-y: -533px"></i><a href="index.html" class="navlisttext">户外馆</a></span>
                     <p class="nav_listitem_doc">
-                        <a href="">登山鞋</a><a href="">溯溪鞋</a><a href="">休闲鞋</a><a href="">户外</a>
+                        <a href="javascript:;">登山鞋</a><a href="javascript:;">溯溪鞋</a><a href="javascript:;">休闲鞋</a><a href="javascript:;">户外</a>
                     </p>
                     <div class="nav_box_show">
                         <div class="showbox_right">
@@ -192,9 +196,9 @@
                 <li class="nav_box_no1">
                     <span class="nav_listitem_title"><i class="navlisticon" style="background-position-y: -624px"></i><a href="index.html" class="navlisttext">儿童馆</a></span>
                     <p class="nav_listitem_doc">
-                        <a href="">新品童鞋</a><a href="">凉鞋</a><a href="">运动鞋</a><a href="">帆布</a>
+                        <a href="javascript:;">新品童鞋</a><a href="javascript:;">凉鞋</a><a href="javascript:;">运动鞋</a><a href="javascript:;">帆布</a>
                     </p>
-                    <div class="nav_box_show"style="top:61px;">
+                    <div class="nav_box_show" style="top:61px;">
                         <div class="showbox_right">
                             <i class="close_navbox_but"></i>
                             <span class="showbox_img"><a href="index.html"></a></span>
@@ -204,7 +208,7 @@
                 <li class="nav_box_no1" style="border-bottom: 1px solid #e7e7e7;">
                     <span class="nav_listitem_title"><i class="navlisticon" style="background-position-y: -673px"></i><a href="index.html" class="navlisttext">箱包馆</a></span>
                     <p class="nav_listitem_doc">
-                        <a href="">男包</a><a href="">女包</a><a href="">旅行箱包</a><a href="">精品家</a>
+                        <a href="javascript:;">男包</a><a href="javascript:;">女包</a><a href="javascript:;">旅行箱包</a><a href="javascript:;">精品家</a>
                     </p>
                     <div class="nav_box_show" style="top:140px;">
                         <div class="showbox_right">
@@ -227,11 +231,11 @@
                 <div id="banner_rightbut"></div>
                 <div class="banner_wrap">
                     <ul class="banner_wrap1">
-                        <li class="banner_img"><a href=""><img src="image/banner01.jpg" alt=""></a></li>
-                        <li class="banner_img"><a href=""><img src="image/banner02.jpg" alt=""></a></li>
-                        <li class="banner_img"><a href=""><img src="image/banner03.jpg" alt=""></a></li>
-                        <li class="banner_img"><a href=""><img src="image/banner04.jpg" alt=""></a></li>
-                        <li class="banner_img"><a href=""><img src="image/banner05.jpg" alt=""></a></li>
+                        <li class="banner_img"><a href="javascript:;"><img src="image/banner01.jpg" alt=""></a></li>
+                        <li class="banner_img"><a href="javascript:;"><img src="image/banner02.jpg" alt=""></a></li>
+                        <li class="banner_img"><a href="javascript:;"><img src="image/banner03.jpg" alt=""></a></li>
+                        <li class="banner_img"><a href="javascript:;"><img src="image/banner04.jpg" alt=""></a></li>
+                        <li class="banner_img"><a href="javascript:;"><img src="image/banner05.jpg" alt=""></a></li>
                     </ul>
                 </div>
                 <p class="banner_listbox">
@@ -278,9 +282,9 @@
             </div>
             <div class="body_topR_banner">
                 <span class="topR_banner_box">
-                    <a href="" class="topR_banner_item"><img src="image/rightbanner1.jpg" alt=""></a>
-                    <a href="" class="topR_banner_item"><img src="image/rightbanner2.jpg" alt=""></a>
-                    <a href="" class="topR_banner_item"><img src="image/rightbanner3.jpg" alt=""></a>
+                    <a href="javascript:;" class="topR_banner_item"><img src="image/rightbanner1.jpg" alt=""></a>
+                    <a href="javascript:;" class="topR_banner_item"><img src="image/rightbanner2.jpg" alt=""></a>
+                    <a href="javascript:;" class="topR_banner_item"><img src="image/rightbanner3.jpg" alt=""></a>
                 </span>
                 <em class="topR_banner_number">1/3</em>
             </div>
@@ -303,9 +307,9 @@
         </div>
     </div>
     <div class="clear"></div>
-    <div class="index_body_lovetuan">
+    <div class="index_body_lovetuan" data-key="false">
         <div class="lovetuan_title">
-            <a href="" class="lovetuan_link">爱团购</a>
+            <a href="javascript:;" class="lovetuan_link">爱团购</a>
             <div class="lovetuan_nav">
                 <b class="lovetuan_nav1">精品推荐</b>
                 <b class="lovetuan_nav1">
@@ -320,6 +324,7 @@
             <ul class="lovetuan_list1">
                 <li class="lovetuan_list_item1">
                     <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                        <img src="">
                     </a>
                     <dd class="lovetuan_precent">
                         <span class="showtime" data-time="2016-08-11 23:59:59">
@@ -335,6 +340,7 @@
                 </li>
                 <li class="lovetuan_list_item1">
                     <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                        <img src="">
                     </a>
                     <dd class="lovetuan_precent">
                         <span class="showtime" data-time="2016-08-11 23:59:59">
@@ -350,6 +356,7 @@
                 </li>
                 <li class="lovetuan_list_item1">
                     <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                        <img src="">
                     </a>
                     <dd class="lovetuan_precent">
                         <span class="showtime" data-time="2016-08-11 23:59:59">
@@ -365,6 +372,7 @@
                 </li>
                 <li class="lovetuan_list_item1">
                     <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                        <img src="">
                     </a>
                     <dd class="lovetuan_precent">
                         <span class="showtime" data-time="2016-08-11 23:59:59">
@@ -380,6 +388,8 @@
                 </li>
                 <li class="lovetuan_list_item1">
                     <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                        <img src="">
+                        <img src="">
                     </a>
                     <dd class="lovetuan_precent">
                         <span class="showtime" data-time="2016-08-11 23:59:59">
@@ -395,6 +405,7 @@
                 </li>
                 <li class="lovetuan_list_item1">
                     <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                        <img src="">
                     </a>
                     <dd class="lovetuan_precent">
                         <span class="showtime" data-time="2016-08-11 23:59:59">
@@ -410,6 +421,7 @@
                 </li>
                 <li class="lovetuan_list_item1">
                     <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                        <img src="">
                     </a>
                     <dd class="lovetuan_precent">
                         <span class="showtime" data-time="2016-08-11 23:59:59">
@@ -425,6 +437,7 @@
                 </li>
                 <li class="lovetuan_list_item1">
                     <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                        <img src="">
                     </a>
                     <dd class="lovetuan_precent">
                         <span class="showtime" data-time="2016-08-11 23:59:59">
@@ -440,6 +453,7 @@
                 </li>
                 <li class="lovetuan_list_item1">
                     <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                        <img src="">
                     </a>
                     <dd class="lovetuan_precent">
                         <span class="showtime" data-time="2016-08-11 23:59:59">
@@ -455,6 +469,7 @@
                 </li>
                 <li class="lovetuan_list_item1">
                     <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                        <img src="">
                     </a>
                     <dd class="lovetuan_precent">
                         <span class="showtime" data-time="2016-08-11 23:59:59">
@@ -470,6 +485,7 @@
                 </li>
                 <li class="lovetuan_list_item1">
                     <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                        <img src="">
                     </a>
                     <dd class="lovetuan_precent">
                         <span class="showtime" data-time="2016-08-11 23:59:59">
@@ -485,6 +501,7 @@
                 </li>
                 <li class="lovetuan_list_item1">
                     <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                        <img src="">
                     </a>
                     <dd class="lovetuan_precent">
                         <span class="showtime" data-time="2016-08-11 23:59:59">
@@ -502,6 +519,7 @@
             <ul class="lovetuan_list1 lovetuan_list_none">
                 <li class="lovetuan_list_item2">
                     <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                        <img src="">
                     </a>
                     <dd class="lovetuan_precent">
                         <span class="showtime" data-time="2016-08-11 23:59:59">
@@ -517,6 +535,7 @@
                 </li>
                 <li class="lovetuan_list_item2">
                     <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                        <img src="">
                     </a>
                     <dd class="lovetuan_precent">
                         <span class="showtime" data-time="2016-08-11 23:59:59">
@@ -532,6 +551,7 @@
                 </li>
                 <li class="lovetuan_list_item2">
                     <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                        <img src="">
                     </a>
                     <dd class="lovetuan_precent">
                         <span class="showtime" data-time="2016-08-11 23:59:59">
@@ -547,6 +567,7 @@
                 </li>
                 <li class="lovetuan_list_item2">
                     <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                        <img src="">
                     </a>
                     <dd class="lovetuan_precent">
                         <span class="showtime" data-time="2016-08-11 23:59:59">
@@ -562,6 +583,7 @@
                 </li>
                 <li class="lovetuan_list_item2">
                     <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                        <img src="">
                     </a>
                     <dd class="lovetuan_precent">
                         <span class="showtime" data-time="2016-08-11 23:59:59">
@@ -577,6 +599,7 @@
                 </li>
                 <li class="lovetuan_list_item2">
                     <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                        <img src="">
                     </a>
                     <dd class="lovetuan_precent">
                         <span class="showtime" data-time="2016-08-11 23:59:59">
@@ -592,6 +615,7 @@
                 </li>
                 <li class="lovetuan_list_item2">
                     <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                        <img src="">
                     </a>
                     <dd class="lovetuan_precent">
                         <span class="showtime" data-time="2016-08-11 23:59:59">
@@ -607,6 +631,7 @@
                 </li>
                 <li class="lovetuan_list_item2">
                     <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                        <img src="">
                     </a>
                     <dd class="lovetuan_precent">
                         <span class="showtime" data-time="2016-08-11 23:59:59">
@@ -622,6 +647,7 @@
                 </li>
                 <li class="lovetuan_list_item2">
                     <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                        <img src="">
                     </a>
                     <dd class="lovetuan_precent">
                         <span class="showtime" data-time="2016-08-11 23:59:59">
@@ -637,6 +663,7 @@
                 </li>
                 <li class="lovetuan_list_item2">
                     <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                        <img src="">
                     </a>
                     <dd class="lovetuan_precent">
                         <span class="showtime" data-time="2016-08-11 23:59:59">
@@ -652,6 +679,7 @@
                 </li>
                 <li class="lovetuan_list_item2">
                     <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                        <img src="">
                     </a>
                     <dd class="lovetuan_precent">
                         <span class="showtime" data-time="2016-08-11 23:59:59">
@@ -667,6 +695,7 @@
                 </li>
                 <li class="lovetuan_list_item2">
                     <a href="javascript:;" target="_blank" class="lovetuan_linkl">
+                        <img src="">
                     </a>
                     <dd class="lovetuan_precent">
                         <span class="showtime" data-time="2016-08-11 23:59:59">
@@ -690,45 +719,121 @@
             <i class="floor_icon floor1_icon_color">F1</i>
             <h2 class="floor_title_name">运动 <i>|</i> 户外</h2>
             <span class="floor_nav">
-								<a href="javascript:;"  class="floor_nav_list floor0_nav_color">潮牌新品</a>
-								<a href="javascript:;"  class="floor_nav_list">人气跑鞋</a>
-								<a href="javascript:;"  class="floor_nav_list">百搭板鞋</a>
-								<b class="fnl_pointer floor_line1"></b>
+                <a href="javascript:;"  class="floor_nav_list floor0_nav_color">潮牌新品</a>
+                <a href="javascript:;"  class="floor_nav_list">人气跑鞋</a>
+                <a href="javascript:;"  class="floor_nav_list">百搭板鞋</a>
+                <b class="fnl_pointer floor_line1"></b>
 			</span>
         </div>
-        <div class="floor_list skin1">
-            <div class="floor_left_bar">
-                <a href="" target="_blank" class="fl_bar_img"></a>
-                <div class="fl_bar_a">
-                    <span class="fl_bar_tit">热卖</span>
-					<span class="fl_bar_list">
-                        <a href="" target="_blank">跑步鞋</a>
-                        <a href="" target="_blank">N字鞋</a>
-                        <a href="" target="_blank">篮球鞋</a>
-                        <a href="" target="_blank">运动双肩包</a>
-                        <a href="" target="_blank">AIR MAX</a>
-                        <a href="" target="_blank">运动T恤</a>
-                        <a href="" target="_blank">休闲鞋</a>
-                        <a href="" target="_blank">登山鞋</a>
-                        <a href="" target="_blank">户外鞋</a>
-                    </span>
-                    <a href="javascript:;" class="bar_open" id="bar_open"><i class=""></i></a>
+        <div class="floor_bbb skin1">
+            <div class="floor_list">
+                <div class="floor_left_bar">
+                    <a href="javascript:;" target="_blank" class="fl_bar_img"></a>
+                    <div class="fl_bar_a skin_bar1_a">
+                        <span class="fl_bar_tit">热卖</span>
+					    <span class="fl_bar_list">
+                            <a href="javascript:;" target="_blank">跑步鞋</a>
+                            <a href="javascript:;" target="_blank">N字鞋</a>
+                            <a href="javascript:;" target="_blank">篮球鞋</a>
+                            <a href="javascript:;" target="_blank">运动双肩包</a>
+                            <a href="javascript:;" target="_blank">AIR MAX</a>
+                            <a href="javascript:;" target="_blank">运动T恤</a>
+                            <a href="javascript:;" target="_blank">休闲鞋</a>
+                            <a href="javascript:;" target="_blank">登山鞋</a>
+                            <a href="javascript:;" target="_blank">户外鞋</a>
+                        </span>
+                        <a href="javascript:;" class="bar_open skin_bar1_a" id="bar_open"><i class="openkey"></i></a>
+                    </div>
+                    <div class="fl_bar_b skin_bar1_b">
+                        <span class="fl_bar_tit">特色</span>
+                        <span  class="fl_bar_list">
+                            <a href="javascript:;" target="_blank">减震</a>
+                            <a href="javascript:;" target="_blank">防滑</a>
+                            <a href="javascript:;" target="_blank">耐磨</a>
+                            <a href="javascript:;" target="_blank">透气</a>
+                            <a href="javascript:;" target="_blank">缓冲</a>
+                            <a href="javascript:;" target="_blank">气垫</a>
+                            <a href="javascript:;" target="_blank">反绒皮</a>
+                        </span>
+                    </div>
                 </div>
-                <div class="fl_ bar_b">
-                    <span class="fl_bar_tit">特色</span>
-					<span  class="fl_bar_list">
-                        <a href="" target="_blank">减震</a>
-                        <a href="" target="_blank">防滑</a>
-                        <a href="" target="_blank">耐磨</a>
-                        <a href="" target="_blank">透气</a>
-                        <a href="" target="_blank">缓冲</a>
-                        <a href="" target="_blank">气垫</a>
-                        <a href="" target="_blank">反绒皮</a>
-                    </span>
+                <div class="floor_box">
+                    <div class="floor_box_li0">
+                        <div class="f0_c0">
+                            <a href="javascript:;" class="pub_bg" id="f0_img0_0"></a>
+                            <a href="javascript:;" class="pub_bg" id="f0_img0_1"></a>
+                        </div>
+                        <div class="f0_c1">
+                            <a href="javascript:;" class="pub_bg" id="f0_img0_2"><img src="image/f1_img0_2.jpg" class="img_move"></a>
+                        </div>
+                        <div class="f0_c2">
+                            <a href="javascript:;" class="pub_bg" id="f0_img0_3"></a>
+                            <a href="javascript:;" class="pub_bg" id="f0_img0_4"></a>
+                        </div>
+                        <div class="f0_c3">
+                            <a href="javascript:;" class="pub_bg" id="f0_img0_5">
+                                <span class="f1_c3_infor"><b></b><i class="f1_c3_price"></i></span>
+                            </a>
+                            <a href="javascript:;" class="pub_bg" id="f0_img0_6">
+                                <span class="f1_c3_infor"><b></b><i class="f1_c3_price"></i></span>
+                            </a>
+                            <a href="javascript:;" class="pub_bg" id="f0_img0_7">
+                                <span class="f1_c3_infor"><b></b><i class="f1_c3_price"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="floor_box_li0 dis01">
+                        <ul>
+                            <li class="f1_img1_list pub_bg">
+                            <!--<a href="javascript:;" class="pxh_img" target="_blank">
+                                <img src="">
+                                <span></span>
+                                <span class="bx_buy"></span>
+                            </a>-->
+                            </li>
+                            <li class="f1_img1_list pub_bg">
+
+                            </li>
+                            <li class="f1_img1_list pub_bg"></li>
+                            <li class="f1_img1_list pub_bg"></li>
+                            <li class="f1_img1_list pub_bg"></li>
+                            <li class="f1_img1_list pub_bg"></li>
+                            <li class="f1_img1_list pub_bg"></li>
+                            <li class="f1_img1_list pub_bg"></li>
+                            <li class="f1_img1_list pub_bg"></li>
+                            <li class="f1_img1_list pub_bg"></li>
+                        </ul>
+                    </div>
+                    <div class="floor_box_li0 dis01">
+                    <ul>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                    </ul>
+                </div>
                 </div>
             </div>
         </div>
-        <div class="floor_link"></div>
+        <div class="floor_link" style="background: url('image/bodypart1.jpg') no-repeat;">
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+        </div>
     </div>
     <!--楼层2----------------------------------------------女鞋女装-------->
     <div class="floor girlshose">
@@ -743,8 +848,110 @@
 								<b class="fnl_pointer floor_line2"></b>
 			</span>
         </div>
-        <div class="floor_list"></div>
-        <div class="floor_link"></div>
+        <div class="floor_bbb skin2">
+
+        <div class="floor_list skin">
+            <div class="floor_left_bar">
+                <a href="javascript:;" target="_blank" class="fl_bar_img"></a>
+                <div class="fl_bar_a skin_bar2_a">
+                    <span class="fl_bar_tit">热卖</span>
+					<span class="fl_bar_list">
+                        <a href="javascript:;" target="_blank">凉鞋</a>
+                        <a href="javascript:;" target="_blank">单鞋</a>
+                        <a href="javascript:;" target="_blank">休闲鞋</a>
+                        <a href="javascript:;" target="_blank">松糕鞋</a>
+                        <a href="javascript:;" target="_blank">连衣裙</a>
+                        <a href="javascript:;" target="_blank">T恤</a>
+                        <a href="javascript:;" target="_blank">短裤</a>
+                        <a href="javascript:;" target="_blank">牛仔裤</a>
+                    </span>
+                    <a href="javascript:;" class="bar_open skin_bar2_a"><i class="openkey"></i></a>
+                </div>
+                <div class="fl_bar_b skin_bar2_b">
+                    <span class="fl_bar_tit">特色</span>
+					<span  class="fl_bar_list">
+                        <a href="javascript:;" target="_blank">高跟</a>
+                        <a href="javascript:;" target="_blank">平底</a>
+                        <a href="javascript:;" target="_blank">套脚</a>
+                        <a href="javascript:;" target="_blank">内增高</a>
+                        <a href="javascript:;" target="_blank">魔术贴</a>
+                        <a href="javascript:;" target="_blank">拉链</a>
+                        <a href="javascript:;" target="_blank">布面</a>
+                    </span>
+                </div>
+            </div>
+            <div class="floor_box">
+                <div class="floor_box_li1">
+                    <div class="f1_c0">
+                        <a href="javascript:;" class="pub_bg" id="f1_img0_0"></a>
+                        <a href="javascript:;" class="pub_bg" id="f1_img0_1"></a>
+                    </div>
+                    <div class="f1_c1">
+                        <a href="javascript:;" class="pub_bg" id="f1_img0_2"></a>
+                        <a href="javascript:;" class="pub_bg" id="f1_img0_3"></a>
+                    </div>
+                    <div class="f1_c2">
+                        <a href="javascript:;" class="pub_bg" id="f1_img0_4"></a>
+                        <a href="javascript:;" class="pub_bg" id="f1_img0_5"></a>
+                    </div>
+                    <div class="f1_c3">
+                        <a href="javascript:;" class="pub_bg" id="f1_img0_6">
+                            <span class="f1_c3_infor"><b></b><i class="f1_c3_price"></i></span>
+                        </a>
+                        <a href="javascript:;" class="pub_bg" id="f1_img0_7">
+                            <span class="f1_c3_infor"><b></b><i class="f1_c3_price"></i></span>
+                        </a>
+                        <a href="javascript:;" class="pub_bg" id="f1_img0_8">
+                            <span class="f1_c3_infor"><b></b><i class="f1_c3_price"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="floor_box_li1 dis01">
+                    <ul class="px_h_ul">
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                    </ul>
+                </div>
+                <div class="floor_box_li1 dis01">
+                    <ul class="px_h_ul">
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="floor_link" style="background: url('image/bodypart2.jpg') no-repeat;">
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+        </div>
     </div>
     <!--楼层3----------------------------------------------男鞋男装-------->
     <div class="floor boyshose">
@@ -759,8 +966,117 @@
 								<b class="fnl_pointer floor_line3"></b>
 			</span>
         </div>
-        <div class="floor_list"></div>
-        <div class="floor_link"></div>
+
+        <div class="floor_bbb skin3">
+        <div class="floor_list">
+            <div class="floor_left_bar">
+                <a href="javascript:;" target="_blank" class="fl_bar_img"></a>
+                <div class="fl_bar_a skin_bar3_a">
+                    <span class="fl_bar_tit">热卖</span>
+					<span class="fl_bar_list">
+                        <a href="javascript:;" target="_blank">正装皮鞋</a>
+                        <a href="javascript:;" target="_blank">休闲鞋</a>
+                        <a href="javascript:;" target="_blank">凉鞋</a>
+                        <a href="javascript:;" target="_blank">懒人鞋</a>
+                        <a href="javascript:;" target="_blank">帆布鞋</a>
+                        <a href="javascript:;" target="_blank">衬衫</a>
+                        <a href="javascript:;" target="_blank">牛仔裤</a>
+                        <a href="javascript:;" target="_blank">休闲裤</a>
+                        <a href="javascript:;" target="_blank">西服</a>
+                        <a href="javascript:;" target="_blank">夹克</a>
+                    </span>
+                    <a href="javascript:;" class="bar_open skin_bar3_a"><i class="openkey"></i></a>
+                </div>
+                <div class="fl_bar_b skin_bar3_b">
+                    <span class="fl_bar_tit">特色</span>
+					<span  class="fl_bar_list">
+                        <a href="javascript:;" target="_blank">减震</a>
+                        <a href="javascript:;" target="_blank">防滑</a>
+                        <a href="javascript:;" target="_blank">耐磨</a>
+                        <a href="javascript:;" target="_blank">透气</a>
+                        <a href="javascript:;" target="_blank">缓冲</a>
+                        <a href="javascript:;" target="_blank">气垫</a>
+                        <a href="javascript:;" target="_blank">反绒皮</a>
+                    </span>
+                </div>
+            </div>
+            <div class="floor_box">
+                <div class="floor_box_li2">
+                    <div class="f2_c0">
+                        <a href="javascript:;" class="pub_bg" id="f2_img0_0"></a>
+                        <a href="javascript:;" class="pub_bg" id="f2_img0_1"></a>
+                    </div>
+                    <div class="f2_c1">
+                        <a href="javascript:;" class="pub_bg" id="f2_img0_2"></a>
+                        <a href="javascript:;" class="pub_bg" id="f2_img0_3"></a>
+                        <a href="javascript:;" class="pub_bg" id="f2_img0_4"></a>
+                        <a href="javascript:;" class="pub_bg" id="f2_img0_5"></a>
+                    </div>
+                    <div class="f2_c2">
+                        <a href="javascript:;" class="pub_bg" id="f2_img0_6">
+                            <span class="f1_c3_infor"><b></b><i class="f1_c3_price"></i></span>
+                        </a>
+                        <a href="javascript:;" class="pub_bg" id="f2_img0_7">
+                            <span class="f1_c3_infor"><b></b><i class="f1_c3_price"></i></span>
+                        </a>
+                        <a href="javascript:;" class="pub_bg" id="f2_img0_8">
+                            <span class="f1_c3_infor"><b></b><i class="f1_c3_price"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="floor_box_li2 dis01">
+                    <ul class="px_h_ul">
+                        <li class="f1_img1_list pub_bg">
+                            <!--<a href="javascript:;" class="pxh_img" target="_blank">
+                                <img src="">
+                                <span>Adidas阿迪达斯男鞋女鞋三叶草STAN SMITH情侣板鞋 休闲鞋M20325</span>
+                                <span class="bx_buy">¥659.00</span>
+                            </a>-->
+                        </li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                    </ul>
+                </div>
+                <div class="floor_box_li2 dis01">
+                    <ul class="px_h_ul">
+                        <li class="f1_img1_list pub_bg">
+
+                        </li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="floor_link" style="background: url('image/bodypart3.jpg') no-repeat;">
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+        </div>
     </div>
     <!--楼层4----------------------------------------------童鞋童装-------->
     <div class="floor chileshose">
@@ -775,12 +1091,116 @@
 								<b class="fnl_pointer floor_line4"></b>
 			</span>
         </div>
-        <div class="floor_list"></div>
-        <div class="floor_link"></div>
+
+        <div class="floor_bbb skin4">
+
+        <div class="floor_list">
+            <div class="floor_left_bar">
+                <a href="javascript:;" target="_blank" class="fl_bar_img"></a>
+                <div class="fl_bar_a skin_bar4_a">
+                    <span class="fl_bar_tit">热卖</span>
+					<span class="fl_bar_list">
+                        <a href="javascript:;" target="_blank">休闲鞋</a>
+                        <a href="javascript:;" target="_blank">运动鞋</a>
+                        <a href="javascript:;" target="_blank">公主鞋</a>
+                        <a href="javascript:;" target="_blank">宝宝鞋</a>
+                        <a href="javascript:;" target="_blank">衬衫</a>
+                        <a href="javascript:;" target="_blank">帆布鞋</a>
+                        <a href="javascript:;" target="_blank">连衣裙</a>
+                        <a href="javascript:;" target="_blank">裤子</a>
+                        <a href="javascript:;" target="_blank">亲子装</a>
+                        <a href="javascript:;" target="_blank">双肩包</a>
+                    </span>
+                    <a href="javascript:;" class="bar_open skin_bar4_a"><i class="openkey"></i></a>
+                </div>
+                <div class="fl_bar_b skin_bar4_b">
+                    <span class="fl_bar_tit">特色</span>
+					<span  class="fl_bar_list">
+                        <a href="javascript:;" target="_blank">铆钉</a>
+                        <a href="javascript:;" target="_blank">卡通</a>
+                        <a href="javascript:;" target="_blank">拼接</a>
+                        <a href="javascript:;" target="_blank">斗篷</a>
+                        <a href="javascript:;" target="_blank">魔术贴</a>
+                        <a href="javascript:;" target="_blank">水贴</a>
+                        <a href="javascript:;" target="_blank">绣花</a>
+                    </span>
+                </div>
+            </div>
+            <div class="floor_box">
+                <div class="floor_box_li3">
+                    <div class="f3_c0">
+                        <a href="javascript:;" class="pub_bg" id="f3_img0_0"></a>
+                        <a href="javascript:;" class="pub_bg" id="f3_img0_1"></a>
+                    </div>
+                    <div class="f3_c1">
+                        <a href="javascript:;" class="pub_bg" id="f3_img0_2"></a>
+                        <a href="javascript:;" class="pub_bg" id="f3_img0_3"></a>
+                        <a href="javascript:;" class="pub_bg" id="f3_img0_4"></a>
+                    </div>
+                    <div class="f3_c2">
+                        <a href="javascript:;" class="pub_bg" id="f3_img0_5"></a>
+                        <a href="javascript:;" class="pub_bg" id="f3_img0_6"></a>
+                    </div>
+                    <div class="f3_c3">
+                        <a href="javascript:;" class="pub_bg" id="f3_img0_7">
+                            <span class="f1_c3_infor"><b></b><i class="f1_c3_price"></i></span>
+                        </a>
+                        <a href="javascript:;" class="pub_bg" id="f3_img0_8">
+                            <span class="f1_c3_infor"><b></b><i class="f1_c3_price"></i></span>
+                        </a>
+                        <a href="javascript:;" class="pub_bg" id="f3_img0_9">
+                            <span class="f1_c3_infor"><b></b><i class="f1_c3_price"></i></span>
+                        </a>
+                    </div></div>
+                <div class="floor_box_li3 dis01">
+                    <ul>
+                        <li class="f1_img1_list pub_bg"> </li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                    </ul>
+                </div>
+                <div class="floor_box_li3 dis01">
+                    <ul class="px_h_ul">
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <div class="floor_link"  style="background: url('image/bodypart4.png') no-repeat;">
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+        </div>
     </div>
     <!--楼层5----------------------------------------------箱包家纺-------->
     <div class="floor fashionbag">
-        <div class="floor_title">
+        <div class="floor_title ">
             <a href="javascript:;" target="_blank" class="floor_more" title="更多">更多</a>
             <i class="floor_icon floor5_icon_color">F5</i>
             <h2 class="floor_title_name">箱包 <i>|</i> 家纺</h2>
@@ -791,15 +1211,421 @@
 								<b class="fnl_pointer floor_line5"></b>
 			</span>
         </div>
-        <div class="floor_list"></div>
-        <div class="floor_link"></div>
+
+        <div class="floor_bbb skin5">
+        <div class="floor_list">
+            <div class="floor_left_bar">
+                <a href="javascript:;" target="_blank" class="fl_bar_img"></a>
+                <div class="fl_bar_a skin_bar5_a">
+                    <span class="fl_bar_tit">热卖</span>
+					<span class="fl_bar_list">
+                        <a href="javascript:;" target="_blank">旅行箱</a>
+                        <a href="javascript:;" target="_blank">单肩包</a>
+                        <a href="javascript:;" target="_blank">双肩包</a>
+                        <a href="javascript:;" target="_blank">商务包</a>
+                        <a href="javascript:;" target="_blank">钱包</a>
+                        <a href="javascript:;" target="_blank">四件套</a>
+                        <a href="javascript:;" target="_blank">蚊帐</a>
+                        <a href="javascript:;" target="_blank">床垫</a>
+                        <a href="javascript:;" target="_blank">子母包</a>
+                        <a href="javascript:;" target="_blank">被子</a>
+                    </span>
+                    <a href="javascript:;" class="bar_open skin_bar5_a"><i class="openkey"></i></a>
+                </div>
+                <div class="fl_bar_b skin_bar5_b">
+                    <span class="fl_bar_tit">特色</span>
+					<span  class="fl_bar_list">
+                        <a href="javascript:;" target="_blank">格子</a>
+                        <a href="javascript:;" target="_blank">复古</a>
+                        <a href="javascript:;" target="_blank">荷叶边</a>
+                        <a href="javascript:;" target="_blank">商务</a>
+                        <a href="javascript:;" target="_blank">学院</a>
+                        <a href="javascript:;" target="_blank">欧美</a>
+                        <a href="javascript:;" target="_blank">卡通</a>
+                    </span>
+                </div>
+            </div>
+            <div class="floor_box">
+                <div class="floor_box_li4">
+                    <div class="f4_c0">
+                        <a href="javascript:;" class="pub_bg" id="f4_img0_0"></a>
+                        <a href="javascript:;" class="pub_bg" id="f4_img0_1"></a>
+                    </div>
+                    <div class="f4_c1">
+                        <a href="javascript:;" class="pub_bg" id="f4_img0_2"></a>
+                    </div>
+                    <div class="f4_c2">
+                        <a href="javascript:;" class="pub_bg" id="f4_img0_3"></a>
+                        <a href="javascript:;" class="pub_bg" id="f4_img0_4"></a>
+                    </div>
+                    <div class="f4_c3">
+                        <a href="javascript:;" class="pub_bg" id="f4_img0_5">
+                            <span class="f1_c3_infor"><b></b><i class="f1_c3_price"></i></span>
+                        </a>
+                        <a href="javascript:;" class="pub_bg" id="f4_img0_6">
+                            <span class="f1_c3_infor"><b></b><i class="f1_c3_price"></i></span>
+                        </a>
+                        <a href="javascript:;" class="pub_bg" id="f4_img0_7">
+                            <span class="f1_c3_infor"><b></b><i class="f1_c3_price"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="floor_box_li4 dis01">
+                    <ul class="px_h_ul">
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                    </ul>
+                </div>
+                <div class="floor_box_li4 dis01">
+                    <ul>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                        <li class="f1_img1_list pub_bg"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="floor_link"  style="background: url(image/bodypart5.png) no-repeat">
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+            <a href="javascript:;" class="f_link_li"></a>
+        </div>
     </div>
-    <!---->
+    <div class="clear"></div>
+
+<!------------------------------------------------------------------------------------------------------------->
+    <div class="px_culture">
+        <div class="pop_plugin">
+            <span class="clpub_title">品牌入驻</span>
+            <a href="javascript:;" class="liugin_flash pub_bg"></a>
+        </div>
+        <div class="culture_show">
+            <span class="clpub_title">拍鞋影响力</span>
+            <div class="culture_img_box">
+                <div class="culture_banner">
+                    <span class="culture_banner_box">
+                        <a href="javascript:;" class="culture_imgli pub_bg">1 <i class="black_opacity">完全无人确认日期污染</i></a>
+                        <a href="javascript:;" class="culture_imgli pub_bg">2 <i class="black_opacity">亲热完全无热情让我去我去人情味</i></a>
+                        <a href="javascript:;" class="culture_imgli pub_bg">3 <i class="black_opacity">气温气温日气温日确认</i></a>
+                    </span>
+                </div>
+                <a href="javascript:;" class="culture_ban_a culture_ban_hover pub_bg">1</a>
+                <a href="javascript:;" class="culture_ban_a pub_bg">2</a>
+                <a href="javascript:;" class="culture_ban_a pub_bg">3</a>
+            </div>
+        </div>
+        <div class="culture_news">
+            <span class="clpub_title">媒体报道</span>
+            <div class="culture_news_box">
+                <a href="javascript" class="img_news pub_bg"><i class="img_news_tit">123124124</i></a>
+                <li class="culture_newsli">1</li>
+                <li class="culture_newsli">2</li>
+                <li class="culture_newsli">3</li>
+                <li class="culture_newsli">4</li>
+            </div>
+
+            <span class="clpub_title">品牌资讯</span>
+            <div class="culture_news_box">
+                <a href="javascript" class="img_news pub_bg"><i class="img_news_tit">123124124</i></a>
+                <li class="culture_newsli">1</li>
+                <li class="culture_newsli">2</li>
+                <li class="culture_newsli">3</li>
+                <li class="culture_newsli">4</li>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------------------------------------------------------------------------------->
+    <div class="body_season">
+        <div class="season_line"><span>当季正在穿</span></div>
+        <div class="season_list">
+            <ul id="season_rimg">
+                <li>
+					<span class="season_img">
+						<a href="javascript:;" target="_blank">
+                            <i>运动馆</i>
+                            <img src="image/paixie.gif" alt="">
+                            <b>11231231243123123123</b>
+                        </a>
+					</span>
+					<span class="season_text">
+                        <a href="javascript:;" >舒适跑鞋</a>
+                        <a href="javascript:;" >百搭板鞋</a>
+                        <a href="javascript:;" >篮球鞋</a>
+                        <a href="javascript:;" >运动服饰</a>
+                        <a href="javascript:;" >帆布鞋</a>
+                        <a href="javascript:;" >运动休闲鞋</a>
+                    </span>
+                </li>
+                <li>
+					<span class="season_img">
+						<a href="javascript:;"  >
+                            <i style="top: 8px;">女鞋馆</i>
+                            <img src="image/paixie.gif" alt="">
+                            <b>2</b>
+                        </a>
+					</span>
+					<span class="season_text">
+                        <a href="javascript:;" target="_blank">女鞋上新</a>
+                        <a href="javascript:;" target="_blank">优雅高鞋</a>
+                        <a href="javascript:;" target="_blank">甜美女单</a>
+                        <a href="javascript:;" target="_blank">欧范休闲</a>
+                        <a href="javascript:;" target="_blank">百搭帆布</a>
+                        <a href="javascript:;" target="_blank">性感凉鞋</a>
+                    </span>
+                </li>
+                <li>
+					<span class="season_img">
+						<a href="javascript:;" target="_blank">
+                            <i style="top: 8px;">男鞋馆</i>
+                            <img src="image/paixie.gif" alt="">
+                            <b>3</b>
+                        </a>
+					</span>
+					<span class="season_text">
+                        <a href="javascript:;" target="_blank">休闲鞋</a>
+                        <a href="javascript:;" target="_blank">商务皮鞋</a>
+                        <a href="javascript:;" target="_blank">休闲皮鞋</a>
+                        <a href="javascript:;" target="_blank">隐形增高</a>
+                        <a href="javascript:;" target="_blank">经典帆布</a>
+                        <a href="javascript:;" target="_blank">工装鞋</a>
+                    </span>
+                </li>
+                <li>
+					<span class="season_img">
+						<a href="javascript:;" target="_blank">
+                            <i style="top: 8px;">户外馆</i>
+                            <img src="image/paixie.gif" alt="">
+                            <b>4</b>
+                        </a>
+					</span>
+					<span class="season_text">
+                        <a href="javascript:;" target="_blank">休闲鞋</a>
+                        <a href="javascript:;" target="_blank">登山鞋</a>
+                        <a href="javascript:;" target="_blank">徒步旅行</a>
+                        <a href="javascript:;" target="_blank">户外背包</a>
+                        <a href="javascript:;" target="_blank">溯溪鞋</a>
+                        <a href="javascript:;" target="_blank">户外休闲装</a>
+                    </span>
+                </li>
+                <li>
+					<span class="season_img">
+						<a href="javascript:;" target="_blank">
+                            <i style="top: 8px;">儿童馆</i>
+                            <img src="image/paixie.gif" alt="">
+                            <b>5</b>
+                        </a>
+					</span>
+					<span class="season_text">
+                        <a href="javascript:;" target="_blank">儿童衬衫</a>
+                        <a href="javascript:;" target="_blank">公主鞋</a>
+                        <a href="javascript:;" target="_blank">运动潮鞋</a>
+                        <a href="javascript:;" target="_blank">童皮鞋</a>
+                        <a href="javascript:;" target="_blank">学步鞋</a>
+                        <a href="javascript:;" target="_blank">春季童装</a>
+                    </span>
+                </li>
+                <li>
+					<span class="season_img">
+						<a href="javascript:;" target="_blank">
+                            <i style="top: 8px;">服饰馆</i>
+                            <img src="image/paixie.gif" alt="">
+                            <b>6</b>
+                        </a>
+					</span>
+					<span class="season_text">
+                        <a href="javascript:;" target="_blank">百搭T恤</a>
+                        <a href="javascript:;" target="_blank">连衣裙</a>
+                        <a href="javascript:;" target="_blank">牛仔裤</a>
+                        <a href="javascript:;" target="_blank">时尚箱包</a>
+                        <a href="javascript:;" target="_blank">型尚男装</a>
+                        <a href="javascript:;" target="_blank">潮流女装</a>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="clear"></div>
+
 </div>
 
 
+<div class="clear"></div>
+<!----------------------------------------------------------->
+<div class="foot">
+    <div class="fiveIcon">
+        <div class="fiveIconBox">
+            <div class="fiveIcon_li">
+                <span class="foot_icon_img"><i class="ficon1"></i><b class="foot_iconlink"><a href="javascript:;">正品保证 假一赔十</a></b></span>
+                <span class="foot_icon_img"><i class="ficon2"></i><b class="foot_iconlink"><a href="javascript:;">货到付款 全国范围</a></b></span>
+                <span class="foot_icon_img"><i class="ficon3"></i><b class="foot_iconlink"><a href="javascript:;">10天保值 差价返还</a></b></span>
+                <span class="foot_icon_img"><i class="ficon4"></i><b class="foot_iconlink"><a href="javascript:;">满129元包邮</a></b></span>
+                <span class="foot_icon_img"><i class="ficon5"></i><b class="foot_iconlink"><a href="javascript:;">15天无理由 免邮退换货</a></b></span>
+            </div>
+        </div>
+    </div>
+    <div class="foot_nav">
+        <dl>
+            <dd class="f_help">
+                <b>新手帮助</b>
+                <span><a href="javascript:;">注册会员</a></span>
+                <span><a href="javascript:;" >如何购物</a></span>
+                <span><a href="javascript:;" >拍鞋币说明</a></span>
+                <span><a href="javascript:;" >优惠券说明</a></span>
+            </dd>
+            <dd class="zhifu">
+                <b>支付方式</b>
+                <span><a href="javascript:;" >支付宝快捷支付</a></span>
+                <span><a href="javascript:;" >网上银行支付</a></span>
+                <span><a href="javascript:;" >货到付款</a></span>
+                <span><a href="javascript:;" >运费说明</a></span>
+            </dd>
+            <dd class="shouhe">
+                <b>售后服务</b>
+                <span><a href="javascript:;" >退换货政策说明</a></span>
+                <span><a href="javascript:;" >退款详细说明</a></span>
+                <span><a href="javascript:;" >如何办理退换货</a></span>
+            </dd>
+            <dd class="f_about">
+                <b>关于拍鞋网</b>
+                <span><a href="javascript:;" >了解拍鞋网</a></span>
+                <span><a href="javascript:;"  >商家入驻</a></span>
+                <span><a href="javascript:;" >联系我们</a></span>
+                <span><a href="javascript:;" >拍鞋招聘</a></span>
+            </dd>
+            <dd class="kefu">
+                <b>客服中心</b>
+                <p>客服电话：4008 81 82 83<br>
+                    售后专线：0595-83092222<br>
+                    服务时间：周一到周日8:00-23:30</p>
+            </dd>
+            <dd class="moble">
+                <b>拍鞋网客户端</b>
+                <p>随时随地上拍鞋！</p>
+                <span class="mcode"></span>
+            </dd>
+            <dd>
+                <b>拍鞋微信</b>
+                <p>查订单更快捷</p>
+				<span class="pcode">
+					<p class="pshare">
+                        <a href="javascript:;" class="s_sina"></a>
+                        <a href="javascript:;" class="s_zone"></a>
+                    </p>
+				</span>
+            </dd>
+        </dl>
+    </div>
+    <div class="foot_copyright"><span>Copyright <i>©</i> 2007-2016 Paixie.net All Rights Reserved 闽B2-20110084</span></div>
+    <div class="foot_linkText">
+        <div class="dolinkshow" id="dolinkshow" data-key="0"></div><b>友情链接</b>：
+        <a href="http://www.jihaoba.com" target="_blank">手机靓号网</a>
+        <a href="http://www.hbrc.com/" target="_blank">石家庄招聘</a>
+        <a href="http://www.laobiao.com" target="_blank">江西老表网</a>
+        <a href="http://www.tuan138.com/" target="_blank">团购</a>
+        <a href="http://www.easeeyes.com" target="_blank">美瞳</a>
+        <a href="http://www.qqqnm.com" target="_blank">海淘攻略</a>
+        <a href="http://www.geihui.com" target="_blank">给惠网</a>
+        <a href="http://www.gougoujp.com/" target="_blank">雅虎日本</a>
+        <a href="http://www.bloves.com/" target="_blank">钻戒</a>
+        <a href="http://www.shelive.net/" target="_blank">穿衣搭配网</a>
+        <a href="http://www.letao-cn.com/" target="_blank">日本代购</a>
+        <a href="http://www.paixie.net/zhishi/" target="_blank">拍鞋百科</a>
+        <a href="http://www.cunan.com" target="_blank">伊宅购村安商城</a>
+        <a href="http://www.99114.com" target="_blank">B2B电子商务</a>
+        <a href="http://www.258.com/" target="_blank">258企业服务平台</a>
+        <a href="http://www.91lai.com" target="_blank">代购</a>
+        <a href="http://www.waibotu.com/" target="_blank">返利网</a>
+        <a href="http://www.vmall.com/" target="_blank">华为商城</a>
+        <a href="http://www.wbiao.cn" target="_blank">万表网官网</a>
+        <a href="http://www.nahuo.com/" target="_blank">服装批发</a>
+        <a href="http://www.aiuw.com/" target="_blank">装修</a>
+        <a href="http://www.zhe800.com/" target="_blank">9.9包邮</a>
+        <a href="http://www.xbiao.com" target="_blank">手表品牌大</a>
+        <a href="http://www.eelly.com/" target="_blank">衣联网</a>
+        <a href="http://www.nanrenwo.net/" target="_blank">男人窝</a>
+        <a href="http://www.ef43.com.cn" target="_blank">中国丽人网</a>
+        <a href="http://www.wed114.cn/" target="_blank">婚纱摄影</a>
+        <a href="http://www.quanmama.com/" target="_blank">优惠券网站</a>
+        <a href="http://www.city8.com" target="_blank">中国街景地图 </a>
+        <a href="http://www.chinapp.com/" target="_blank">中国品牌网</a>
+        <a href="http://www.99wed.com/" target="_blank">婚纱摄影</a>
+        <a href="http://www.51sole.com/" target="_blank">搜了网</a>
+        <a href="http://www.juanpi.com/" target="_blank">卷皮折扣</a>
+        <a href="http://www.zhidiy.com" target="_blank">纸艺网</a>
+        <a href="http://www.liebiao.com/" target="_blank">分类信息网</a>
+        <a href="http://hzp.onlylady.com/" target="_blank">化妆品品牌大全</a>
+        <a href="http://www.jufengshang.com" target="_blank">手表网</a>
+        <a href="http://www.zaokk.com/" target="_blank">早看看影视网</a>
+        <a href="http://www.taofen8.com/" target="_blank">淘粉吧</a>
+        <a href="http://www.bestb2b.com/" target="_blank">志趣网</a>
+        <a href="http://www.jiukuaiyou.com/" target="_blank">九块邮</a>
+        <a href="http://www.darryring.com/" target="_blank">DR</a>
+        <a href="http://www.cnxz.cn/" target="_blank">中国鞋网</a>
+        <a href="http://www.shoes.net.cn/" target="_blank">环球鞋网</a>
+        <a href="http://www.liwuyou.com/" target="_blank">生日礼物网</a>
+        <a href="http://www.moonbasa.com/" target="_blank">品牌女装</a>
+        <a href="http://www.xbaixing.com/" target="_blank">百姓网</a>
+        <a href="http://www.huangye88.com" target="_blank">中国供求信息网</a>
+        <a href="http://www.tnc.com.cn/" target="_blank">纺织网 </a>
+        <a href="http://www.zbird.com" target="_blank">钻石小鸟官网</a>
+        <a href="http://www.234.cn/" target="_blank">儿童玩具</a>
+        <a href="http://www.kidsnet.cn/" target="_blank">童装加盟网</a>
+        <a href="http://www.7dapei.com/" target="_blank"> 穿衣搭配网</a>
+        <a href="http://www.nahuo9.com/" target="_blank">服装批发</a>
+        <a href="http://www.efu.com.cn/ " target="_blank">中国服装网</a>
+        <a href="http://www.juooo.com" target="_blank">演唱会</a>
+        <a href="http://www.1688ru.com" target="_blank">中亚商务网</a>
+        <a href="http://www.longfeng.com/" target="_blank">龙凤商城</a>
+        <a href="http://www.chinaleather.org/" target="_blank">中国皮革网</a>
+        <a href="http://www.sodao.com" target="_blank">免费试用</a>
+        <a href="http://www.love616.com" target="_blank">服饰搭配</a>
+        <a href="http://www.78.cn/" target="_blank">投资开店</a>
+        <a href="http://www.ickd.cn/" target="_blank" rel="nofollow">爱查快递</a>
+        <a href="http://www.hunt007.com/" target="_blank">找工易</a>
+        <a href="http://www.1000tuan.com/" target="_blank">千团网</a>
+        <a href="http://www.paixie.net/link.html" rel="nofollow" target="_blank">更多&gt;</a>
+    </div>
+
+    <div class="foot_linkImage">
+        <a href="javascript:;" rel="nofollow" class="investment"><!-- 最具投资价值企业 --></a>
+        <a href="javascript:;" rel="nofollow" class="ecommerce"><!-- 最佳电子商务网站 --></a>
+        <a href="javascript:;" rel="nofollow" class="alipay"><!-- 支付宝特约商家 --></a>
+        <a href="javascript:;" rel="nofollow" class="scouring"><!-- 一淘网合作商家 --></a>
+        <a href="https://search.szfw.org/cert/l/CX20130326002388002822" rel="nofollow" target="_blank" class="honesty"><!-- 诚信网站 --></a>
+        <a href="javascript:;" rel="nofollow" class="commerce"><!-- 福建工商网监 --></a>
+        <a href="javascript:;" rel="nofollow" class="report"><!-- 12358价格举报 --></a>
+    </div>
+
+
+</div>
 
 <script src="js/index.js"></script>
 <script src="js/banner.js"></script>
+<script src="js/plugin.js"></script>
 </body>
 </html>
