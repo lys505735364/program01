@@ -60,6 +60,7 @@ $("document").ready(function(){
                 $(this).siblings(".errorshow").removeClass("goodinfor");
                 $(this).siblings(".errorshow").addClass("badinfor");
                 $(this).siblings(".errorshow").html(bugarr[1]);
+                /*flag[0] =false;*/
             }else{//---------------------------------------------------------------------------------------------------------------如果这个值--合法
                 $(this).siblings(".errorshow").css({diplay:"none"});
                 searchnum($(this).val(),$(this));//调用 查询函数
@@ -193,7 +194,7 @@ $("document").ready(function(){
         else(code=""+code);
         flag[3]=false;
         codenumber = code;
-        console.log("验证码为:"+codenumber);
+        alert("验证码为:"+codenumber);
 
     });
     $("#codes").focus(function(){

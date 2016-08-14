@@ -1,0 +1,18 @@
+.shoplist_list_skin{
+    background:#FFF;
+}
+.shoplist_list_skin:hover{background:#f9e6e6;}
+.shoplist_list_skin .shop_list_icon{
+    background:url("../image/All_bg.png") no-repeat -321px -923px;
+}
+
+.slshop_list_color{color:#000}
+.nav_box{
+    background: #FFF;
+    border-top:3px solid #fa5000;
+    position: absolute;
+    top:35px;
+    left:0;
+    display: none;
+    z-index: 800;
+}

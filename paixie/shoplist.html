@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/shoplist.css">
+</head>
+<body>
+<!----最顶部-->
+<div class="index_Head_Head">
+    <div class="index_Head" id="index_Head">
+        <div class="index_Head_nav">
+            <a href="iphone.html" class="AppLink"></a>
+            <div class="Not_login">
+                <p>你好!欢迎来拍鞋网!</p>
+                <a href="Login.html" class="UserLogin"></a>
+                <a href="regedit.html" class="UserRegedit">免费注册</a>
+            </div>
+            <div class="Has_login">
+                    <span>
+                        <a ><b>欢迎您,</b><b class="usercolor">阿斯蒂芬</b></a>
+                        <a class="usericons"><ins class="vips0"></ins></a>
+                        <i>|</i><a>[我的订单]</a><i>|</i><a >[退出]</a>
+                    </span>
+            </div>
+            <div class="index_Head_navR">
+            <span class="index_Cart">
+                <a href="javascript:;"><em class="index_Cart_Icon"></em> <em class="index_Cart_link">购物车</em><em id="index_Cart_Count"></em></a>
+                <ul class="index_CartList"></ul>
+            </span>
+                <i>|</i>
+            <span class="index_MyPX">
+                <a href="javascript:;" class="index_MyPX_Link">我的拍鞋 <em class="index_MyPX_Icon"></em></a>
+                <ul class="index_MyPX_list">
+                    <li class="mypx_list_item"><a href="index.html" class="mypx_list_link">我的订单</a></li>
+                    <li class="mypx_list_item"><a href="index.html" class="mypx_list_link">我的收藏</a></li>
+                    <li class="mypx_list_item"><a href="index.html" class="mypx_list_link">我的优惠券</a></li>
+                </ul>
+            </span>
+                <i>|</i>
+            <span class="index_NewsLink">
+                <a href="javascript:;">消息 <em id="index_NewsCount"></em></a>
+            </span>
+                <i>|</i>
+            <span class="User_VIPClub">
+                <a href="javascript:;">会员俱乐部</a>
+            </span>
+                <i>|</i>
+            <span class="Web_Nav">
+                网址导航 <em class="Web_Nav_Icon"></em>
+                <ul class="Web_nav_list">
+                    <li class="webnavli"><a href="index.html" class="webnavitem">商家入驻</a></li>
+                    <li class="webnavli"><a href="index.html" class="webnavitem">了解拍鞋网</a></li>
+                    <li class="webnavli"><a href="index.html" class="webnavitem">拍鞋公益</a></li>
+                    <li class="webnavli"><a href="index.html" class="webnavitem">网站地图</a></li>
+                    <li class="webnavli"><a href="index.html" class="webnavitem">新手帮助</a></li>
+                </ul>
+            </span>
+            </div>
+        </div>
+    </div>
+</div>
+<!--
+--网站Logo,搜索栏
+-->
+<div class="index_Head_Logo">
+    <div class="head_logo_search">
+        <h1 class="index_Web_logo"><a href="index.html" class="Logo_a"  title="拍鞋网Logo"></a></h1>
+        <a  href="index.html" class="index_Active_PLink"><img src="image/7_7.gif" title="七夕以爱之名"></a>
+        <div class="index_Search">
+            <form action="#" name="SearchBox" class="Search_Form" id="SearchForm">
+                <input type="text" class="index_Search_Text" id="index_Search_Text"/>
+                <input type="button" name="SearchButton" id="index_Search_Button" value="搜索"/>
+            </form>
+            <div class="Search_ListBox" id="SearchList" style="diplay:none"></div>
+            <div class="index_Active_Tlink">
+                <a href="index.html" class="act_link" style="color:#fa5000">七夕专场</a>
+                <a href="index.html" class="act_link">跑步鞋</a>
+                <a href="index.html" class="act_link">男士凉鞋</a>
+                <a href="index.html" class="act_link" style="color:#fa5000">女士凉鞋</a>
+                <a href="index.html" class="act_link">小白鞋</a>
+                <a href="index.html" class="act_link">百搭T恤</a>
+                <a href="index.html" class="act_link" style="color:#fa5000">男鞋特卖</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--
+--网站总菜单,导航
+-->
+<div class="index_NavBox">
+    <div class="index_Nav">
+        <div class="All_shop_list shoplist_list_skin shoplist_hover">
+            <i class="shop_list_icon"></i><span class="shop_list_title slshop_list_color">全部商品分类</span>
+            <ul class="nav_box ">
+                <li class="nav_box_no1">
+                    <span class="nav_listitem_title"><i class="navlisticon"></i><a href="index.html" class="navlisttext">运动馆</a></span>
+                    <p class="nav_listitem_doc">
+                        <a href="javascript:;">板鞋</a><a href="javascript:;">跑步鞋</a><a href="javascript:;">休闲鞋</a><a href="javascript:;">篮球鞋</a>
+                    </p>
+                    <div class="nav_box_show">
+                        <div class="showbox_right">
+                            <i class="close_navbox_but"></i>
+                            <span class="showbox_img"><a href="index.html"></a></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav_box_no1">
+                    <span class="nav_listitem_title"><i class="navlisticon" style="background-position-y: -445px"></i><a href="index.html" class="navlisttext">女鞋馆</a></span>
+                    <p class="nav_listitem_doc">
+                        <a href="javascript:;">夏季新品</a><a href="javascript:;">凉鞋</a><a href="javascript:;">单鞋</a><a href="javascript:;">休闲鞋</a>
+                    </p>
+                    <div class="nav_box_show">
+                        <div class="showbox_right">
+                            <i class="close_navbox_but"></i>
+                            <span class="showbox_img"><a href="index.html"></a></span>
+                        </div></div>
+                </li>
+                <li class="nav_box_no1">
+                    <span class="nav_listitem_title"><i class="navlisticon" style="background-position-y: -491px"></i><a href="index.html" class="navlisttext">男鞋馆</a></span>
+                    <p class="nav_listitem_doc">
+                        <a href="javascript:;">凉鞋</a><a href="javascript:;">休闲鞋</a><a href="javascript:;">帆布鞋</a><a href="javascript:;">豆豆鞋</a>
+                    </p>
+                    <div class="nav_box_show">
+                        <div class="showbox_right">
+                            <i class="close_navbox_but"></i>
+                            <span class="showbox_img"><a href="index.html"></a></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav_box_no1">
+                    <span class="nav_listitem_title"><i class="navlisticon" style="background-position-y: -577px"></i><a href="index.html" class="navlisttext">服饰馆</a></span>
+                    <p class="nav_listitem_doc">
+                        <a href="javascript:;">女装</a><a href="javascript:;">男装</a><a href="javascript:;">人气美裙</a><a href="javascript:;">牛仔短</a>
+                    </p>
+                    <div class="nav_box_show">
+                        <div class="showbox_right">
+                            <i class="close_navbox_but"></i>
+                            <span class="showbox_img"><a href="index.html"></a></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav_box_no1">
+                    <span class="nav_listitem_title"><i class="navlisticon" style="background-position-y: -533px"></i><a href="index.html" class="navlisttext">户外馆</a></span>
+                    <p class="nav_listitem_doc">
+                        <a href="javascript:;">登山鞋</a><a href="javascript:;">溯溪鞋</a><a href="javascript:;">休闲鞋</a><a href="javascript:;">户外</a>
+                    </p>
+                    <div class="nav_box_show">
+                        <div class="showbox_right">
+                            <i class="close_navbox_but"></i>
+                            <span class="showbox_img"><a href="index.html"></a></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav_box_no1">
+                    <span class="nav_listitem_title"><i class="navlisticon" style="background-position-y: -624px"></i><a href="index.html" class="navlisttext">儿童馆</a></span>
+                    <p class="nav_listitem_doc">
+                        <a href="javascript:;">新品童鞋</a><a href="javascript:;">凉鞋</a><a href="javascript:;">运动鞋</a><a href="javascript:;">帆布</a>
+                    </p>
+                    <div class="nav_box_show" style="top:61px;">
+                        <div class="showbox_right">
+                            <i class="close_navbox_but"></i>
+                            <span class="showbox_img"><a href="index.html"></a></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav_box_no1" style="border-bottom: 1px solid #e7e7e7;">
+                    <span class="nav_listitem_title"><i class="navlisticon" style="background-position-y: -673px"></i><a href="index.html" class="navlisttext">箱包馆</a></span>
+                    <p class="nav_listitem_doc">
+                        <a href="javascript:;">男包</a><a href="javascript:;">女包</a><a href="javascript:;">旅行箱包</a><a href="javascript:;">精品家</a>
+                    </p>
+                    <div class="nav_box_show" style="top:140px;">
+                        <div class="showbox_right">
+                            <i class="close_navbox_but"></i>
+                            <span class="showbox_img"><a href="index.html"></a></span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="All_Nav_List">
+            <a href="index.html" class="nav_item">首页</a>
+            <a href="index.html" class="nav_item">爱团购</a>
+            <a href="index.html" class="nav_item">闪购
+                <i class="index_hot_icon"></i></a>
+            <a href="index.html" class="nav_item">今日特价
+                <i class="index_new_icon"></i></a>
+        </div>
+        <a href="index.html" class="Double_Code" title="拍拍吧"><img src="image/DC.jpg" alt="丢了" class="Double_Codeimg"></a>
+    </div>
+</div>
+<!--
+-- 网站的Body
+-->
+<div class="pubbg">
+    <div class="main">
+
+
+<!----------------------------------------------------------------------------------------------------------------------当前路径----->
+        <div class="location_class">
+            <a href="/" title="">首页</a>
+            <span>&gt;</span>
+            <a href="javascript" title="">所有分类</a>
+        </div>
+
+<!----------------------------------------------------------------------------------------------------------------------搜索分类---->
+        <div class="Class_class">
+            <div class="Class_Brand">
+                <span class="Class_Brand_title">
+                    品 <b>牌:</b>
+                </span>
+                <a href="" class="Class_Brand_link">耐克(942)</a>
+                <a href="" class="Class_Brand_link">耐克360(7)</a>
+                <a href="" class="Class_Brand_link">卓诗尼(92)</a>
+                <a href="" class="Class_Brand_link">阿迪达斯(1292)</a>
+                <a href="" class="Class_Brand_link">三叶草(12)</a>
+                <a href="" class="Class_Brand_link">奈仙儿(2)</a>
+                <a href="" class="Class_Brand_link">伊思Q(19)</a>
+                <a href="" class="Class_Brand_link">李宁(2142)</a>
+                <a href="" class="Class_Brand_link">凤族(942)</a>
+                <a href="" class="Class_Brand_link">安踏(942)</a>
+                <a href="" class="Class_Brand_link">东帝名坊(942)</a>
+                <a href="" class="Class_Brand_link">鸿星尔克(942)</a>
+                <a href="" class="Class_Brand_link">匹克(942)</a>
+                <a href="" class="Class_Brand_link">361°(942)</a>
+            </div>
+            <div class="Class_Style">
+                <span class="Class_Style_title">
+                    款 <b>式:</b>
+                </span>
+                <a href="" class="Class_Style_link">足球鞋(100)</a>
+                <a href="" class="Class_Style_link">沙滩鞋/拖鞋/凉鞋(24)</a>
+                <a href="" class="Class_Style_link">女鞋/凉鞋</a>
+                <a href="" class="Class_Style_link">女鞋/靴子</a>
+                <a href="" class="Class_Style_link">篮球鞋</a>
+                <a href="" class="Class_Style_link">单鞋</a>
+                <a href="" class="Class_Style_link">女鞋/拖鞋</a>
+                <a href="" class="Class_Style_link">运动休闲鞋</a>
+                <a href="" class="Class_Style_link">板鞋/休闲鞋</a>
+                <a href="" class="Class_Style_link">跑步鞋</a>
+                <a href="" class="Class_Style_link">网球鞋</a>
+                <a href="" class="Class_Style_link">乒乓球鞋</a>
+                <a href="" class="Class_Style_link">羽毛球鞋</a>
+                <a href="" class="Class_Style_link">户外休闲鞋</a>
+                <a href="" class="Class_Style_link">户外休闲鞋</a>
+                <a href="" class="Class_Style_link">户外休闲鞋</a>
+                <a href="" class="Class_Style_link">户外休闲鞋</a>
+                <a href="" class="Class_Style_link">户外休闲鞋</a>
+            </div>
+        </div>
+<!----------------------------------------------------------------------------------------------------------------------结果排序---->
+        <div class="List_Order">
+            <div class="List_Order_head">
+                <a href="javascript:;" class="Order_Rulerh this_rulerh">默认推荐</a>
+                <a href="javascript:;" class="Order_Rulerh">人气</a>
+                <a href="javascript:;" class="Order_Rulerh">新品</a>
+                <a href="javascript:;"  id="bysales">销量 <i></i>
+                    <div class="bysales1">
+                        <p>销量从高到低</p><p>销量从低到高</p>
+                    </div>
+                </a>
+                <a href="javascript:;" id="byprice">价格 <i></i>
+                    <div class="byprice1">
+                        <p>价格从高到低</p><p>价格从低到高</p>
+                    </div>
+                </a>
+                <a href="javascript:;" id="Next_page">></a>
+                <i id="Now_page">1-100</i>
+                <a href="javascript:;" id="Behand_page"><</a>
+
+
+            </div>
+            <div class="List_Order_foot">
+                <a href="javascript:;" class="Order_Rulerf">货到付款</a>
+                <a href="javascript:;" class="Order_Rulerf">限时促销</a>
+                <a href="javascript:;" class="Order_Rulerf">会员特价</a>
+                <a href="javascript:;" class="Order_Rulerf">团购</a>
+            </div>
+
+        </div>
+<!----------------------------------------------------------------------------------------------------------------------商品列表-->
+        <div class="Goods_List">
+
+
+        </div>
+<!----------------------------------------------------------------------------------------------------------------------分页导航---->
+        <div class="Goods_Page">
+
+        </div>
+<!----------------------------------------------------------------------------------------------------------------------热搜榜---->
+        <div class="Hot_Search_list">
+
+        </div>
+<!----------------------------------------------------------------------------------------------------------------------热门推荐-->
+        <div class="Recommend">
+
+        </div>
+
+    </div><!--main闭合-->
+
+
+</div><!--pub闭合-->
+
+
+
+
+<!--------------------------------网站的尾部--------------------------------->
+<div class="clear"></div>
+<!----------------------------------------------------------->
+<div class="foot">
+    <div class="fiveIcon">
+        <div class="fiveIconBox">
+            <div class="fiveIcon_li">
+                <span class="foot_icon_img"><i class="ficon1"></i><b class="foot_iconlink"><a href="javascript:;">正品保证 假一赔十</a></b></span>
+                <span class="foot_icon_img"><i class="ficon2"></i><b class="foot_iconlink"><a href="javascript:;">货到付款 全国范围</a></b></span>
+                <span class="foot_icon_img"><i class="ficon3"></i><b class="foot_iconlink"><a href="javascript:;">10天保值 差价返还</a></b></span>
+                <span class="foot_icon_img"><i class="ficon4"></i><b class="foot_iconlink"><a href="javascript:;">满129元包邮</a></b></span>
+                <span class="foot_icon_img"><i class="ficon5"></i><b class="foot_iconlink"><a href="javascript:;">15天无理由 免邮退换货</a></b></span>
+            </div>
+        </div>
+    </div>
+    <div class="foot_nav">
+        <dl>
+            <dd class="f_help">
+                <b>新手帮助</b>
+                <span><a href="javascript:;">注册会员</a></span>
+                <span><a href="javascript:;" >如何购物</a></span>
+                <span><a href="javascript:;" >拍鞋币说明</a></span>
+                <span><a href="javascript:;" >优惠券说明</a></span>
+            </dd>
+            <dd class="zhifu">
+                <b>支付方式</b>
+                <span><a href="javascript:;" >支付宝快捷支付</a></span>
+                <span><a href="javascript:;" >网上银行支付</a></span>
+                <span><a href="javascript:;" >货到付款</a></span>
+                <span><a href="javascript:;" >运费说明</a></span>
+            </dd>
+            <dd class="shouhe">
+                <b>售后服务</b>
+                <span><a href="javascript:;" >退换货政策说明</a></span>
+                <span><a href="javascript:;" >退款详细说明</a></span>
+                <span><a href="javascript:;" >如何办理退换货</a></span>
+            </dd>
+            <dd class="f_about">
+                <b>关于拍鞋网</b>
+                <span><a href="javascript:;" >了解拍鞋网</a></span>
+                <span><a href="javascript:;"  >商家入驻</a></span>
+                <span><a href="javascript:;" >联系我们</a></span>
+                <span><a href="javascript:;" >拍鞋招聘</a></span>
+            </dd>
+            <dd class="kefu">
+                <b>客服中心</b>
+                <p>客服电话：4008 81 82 83<br>
+                    售后专线：0595-83092222<br>
+                    服务时间：周一到周日8:00-23:30</p>
+            </dd>
+            <dd class="moble">
+                <b>拍鞋网客户端</b>
+                <p>随时随地上拍鞋！</p>
+                <span class="mcode"></span>
+            </dd>
+            <dd>
+                <b>拍鞋微信</b>
+                <p>查订单更快捷</p>
+				<span class="pcode">
+					<p class="pshare">
+                        <a href="javascript:;" class="s_sina"></a>
+                        <a href="javascript:;" class="s_zone"></a>
+                    </p>
+				</span>
+            </dd>
+        </dl>
+    </div>
+    <div class="foot_copyright"><span>Copyright <i>©</i> 2007-2016 Paixie.net All Rights Reserved 闽B2-20110084</span></div>
+    <div class="foot_linkText">
+        <div class="dolinkshow" id="dolinkshow" data-key="0"></div><b>友情链接</b>：
+        <a href="http://www.jihaoba.com" target="_blank">手机靓号网</a>
+        <a href="http://www.hbrc.com/" target="_blank">石家庄招聘</a>
+        <a href="http://www.laobiao.com" target="_blank">江西老表网</a>
+        <a href="http://www.tuan138.com/" target="_blank">团购</a>
+        <a href="http://www.easeeyes.com" target="_blank">美瞳</a>
+        <a href="http://www.qqqnm.com" target="_blank">海淘攻略</a>
+        <a href="http://www.geihui.com" target="_blank">给惠网</a>
+        <a href="http://www.gougoujp.com/" target="_blank">雅虎日本</a>
+        <a href="http://www.bloves.com/" target="_blank">钻戒</a>
+        <a href="http://www.shelive.net/" target="_blank">穿衣搭配网</a>
+        <a href="http://www.letao-cn.com/" target="_blank">日本代购</a>
+        <a href="http://www.paixie.net/zhishi/" target="_blank">拍鞋百科</a>
+        <a href="http://www.cunan.com" target="_blank">伊宅购村安商城</a>
+        <a href="http://www.99114.com" target="_blank">B2B电子商务</a>
+        <a href="http://www.258.com/" target="_blank">258企业服务平台</a>
+        <a href="http://www.91lai.com" target="_blank">代购</a>
+        <a href="http://www.waibotu.com/" target="_blank">返利网</a>
+        <a href="http://www.vmall.com/" target="_blank">华为商城</a>
+        <a href="http://www.wbiao.cn" target="_blank">万表网官网</a>
+        <a href="http://www.nahuo.com/" target="_blank">服装批发</a>
+        <a href="http://www.aiuw.com/" target="_blank">装修</a>
+        <a href="http://www.zhe800.com/" target="_blank">9.9包邮</a>
+        <a href="http://www.xbiao.com" target="_blank">手表品牌大</a>
+        <a href="http://www.eelly.com/" target="_blank">衣联网</a>
+        <a href="http://www.nanrenwo.net/" target="_blank">男人窝</a>
+        <a href="http://www.ef43.com.cn" target="_blank">中国丽人网</a>
+        <a href="http://www.wed114.cn/" target="_blank">婚纱摄影</a>
+        <a href="http://www.quanmama.com/" target="_blank">优惠券网站</a>
+        <a href="http://www.city8.com" target="_blank">中国街景地图 </a>
+        <a href="http://www.chinapp.com/" target="_blank">中国品牌网</a>
+        <a href="http://www.99wed.com/" target="_blank">婚纱摄影</a>
+        <a href="http://www.51sole.com/" target="_blank">搜了网</a>
+        <a href="http://www.juanpi.com/" target="_blank">卷皮折扣</a>
+        <a href="http://www.zhidiy.com" target="_blank">纸艺网</a>
+        <a href="http://www.liebiao.com/" target="_blank">分类信息网</a>
+        <a href="http://hzp.onlylady.com/" target="_blank">化妆品品牌大全</a>
+        <a href="http://www.jufengshang.com" target="_blank">手表网</a>
+        <a href="http://www.zaokk.com/" target="_blank">早看看影视网</a>
+        <a href="http://www.taofen8.com/" target="_blank">淘粉吧</a>
+        <a href="http://www.bestb2b.com/" target="_blank">志趣网</a>
+        <a href="http://www.jiukuaiyou.com/" target="_blank">九块邮</a>
+        <a href="http://www.darryring.com/" target="_blank">DR</a>
+        <a href="http://www.cnxz.cn/" target="_blank">中国鞋网</a>
+        <a href="http://www.shoes.net.cn/" target="_blank">环球鞋网</a>
+        <a href="http://www.liwuyou.com/" target="_blank">生日礼物网</a>
+        <a href="http://www.moonbasa.com/" target="_blank">品牌女装</a>
+        <a href="http://www.xbaixing.com/" target="_blank">百姓网</a>
+        <a href="http://www.huangye88.com" target="_blank">中国供求信息网</a>
+        <a href="http://www.tnc.com.cn/" target="_blank">纺织网 </a>
+        <a href="http://www.zbird.com" target="_blank">钻石小鸟官网</a>
+        <a href="http://www.234.cn/" target="_blank">儿童玩具</a>
+        <a href="http://www.kidsnet.cn/" target="_blank">童装加盟网</a>
+        <a href="http://www.7dapei.com/" target="_blank"> 穿衣搭配网</a>
+        <a href="http://www.nahuo9.com/" target="_blank">服装批发</a>
+        <a href="http://www.efu.com.cn/ " target="_blank">中国服装网</a>
+        <a href="http://www.juooo.com" target="_blank">演唱会</a>
+        <a href="http://www.1688ru.com" target="_blank">中亚商务网</a>
+        <a href="http://www.longfeng.com/" target="_blank">龙凤商城</a>
+        <a href="http://www.chinaleather.org/" target="_blank">中国皮革网</a>
+        <a href="http://www.sodao.com" target="_blank">免费试用</a>
+        <a href="http://www.love616.com" target="_blank">服饰搭配</a>
+        <a href="http://www.78.cn/" target="_blank">投资开店</a>
+        <a href="http://www.ickd.cn/" target="_blank" rel="nofollow">爱查快递</a>
+        <a href="http://www.hunt007.com/" target="_blank">找工易</a>
+        <a href="http://www.1000tuan.com/" target="_blank">千团网</a>
+        <a href="http://www.paixie.net/link.html" rel="nofollow" target="_blank">更多&gt;</a>
+    </div>
+
+    <div class="foot_linkImage">
+        <a href="javascript:;" rel="nofollow" class="investment"><!-- 最具投资价值企业 --></a>
+        <a href="javascript:;" rel="nofollow" class="ecommerce"><!-- 最佳电子商务网站 --></a>
+        <a href="javascript:;" rel="nofollow" class="alipay"><!-- 支付宝特约商家 --></a>
+        <a href="javascript:;" rel="nofollow" class="scouring"><!-- 一淘网合作商家 --></a>
+        <a href="https://search.szfw.org/cert/l/CX20130326002388002822" rel="nofollow" target="_blank" class="honesty"><!-- 诚信网站 --></a>
+        <a href="javascript:;" rel="nofollow" class="commerce"><!-- 福建工商网监 --></a>
+        <a href="javascript:;" rel="nofollow" class="report"><!-- 12358价格举报 --></a>
+    </div>
+
+
+</div>
+
+
+<!------------------------------------------------------------------------------------------>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/shoplist.js"></script>
+<script src="js/CookieAoout.js"></script>
+<script src="js/ajax.js"></script>
+<script src="js/handlebars.min.js"></script>
+<script type="text/x-handbars-template" id="hand_get">
+    <ul class="Goods_List_get">
+        {{#each good}}
+        <li class="Goods_itbox">
+            <div class="Goods_item">
+                <a href="{{url}}" class="Goods_img_link"><img src="{{src}}" onerror="this.src='image/paixie.gif'"><ins></ins></a>
+                <div class="Goodsinfor">
+                    <span class="oof">￥</span><b>{{nowprice}}</b><del class="oof">￥{{oldprice}}</del>
+                    <p class="title">
+                        <a href="javascript:;">{{title}}</a>
+                    </p>
+                    <p class="shop"><a href="{{store}}">{{storename}}</a></p>
+                </div>
+            </div>
+        </li>
+        {{/each}}
+        <li class="Goods_itbox"><a class="next_goodspage"></a></li>
+    </ul>
+</script>
+<script>
+
+
+</script>
+
+
+
+</body>
+</html>
