@@ -251,7 +251,196 @@ $("document").ready(function() {
         $(this).css({opacity: "1"});
     });
 
+/***********************************************************************************************************************三级菜单事件*/
 
+$(".menu1").mouseenter(function(){
+    $(this).children(".menu2_box").css({display:"block"});
+}).mouseleave(function(){
+    $(this).children(".menu2_box").css({display:"none"});
+});
+
+    $(".menu2_li").mouseenter(function(){
+        $(this).children(".menu3_box").css({display:"block"});
+    }).mouseleave(function(){
+        $(this).children(".menu3_box").css({display:"none"});
+    });
+    $(".menu2_li a").mouseenter(function(){
+        $(this).css({background:"#ced3e1"})
+    }).mouseleave(function(){
+        $(this).css({background:"#eceff7"})
+    });
+
+    $(".menu3_li a").mouseenter(function(){
+        $(this).css({background:"#ced3e1"})
+    }).mouseleave(function(){
+        $(this).css({background:"#eceff7"})
+    });
+
+    $(".show_img").mousemove(function(evt){
+        var e = evt||window.event;
+        var disY = $(this).offset().top - $("body").scrollTop();
+        var disX =$(this).offset().left - $("body").scrollLeft();
+        var mpointX = e.clientX - disX;
+        var mpointY = e.clientY - disY;
+        var dis_Top = mpointY - $(".proimg_tip").height()/2;
+        var dis_Left = mpointX - $(".proimg_tip").width()/2;
+        dis_Top =(dis_Top<=0?0:dis_Top);
+        dis_Top =(dis_Top>=200?200:dis_Top);
+        dis_Left =(dis_Left<=0?0:dis_Left);
+        dis_Left =(dis_Left>=200?200:dis_Left);
+
+        $(".proimg_tip").css({top:dis_Top});
+        $(".proimg_tip").css({left:dis_Left});
+        $(".bigimg_box").css({marginLeft:-dis_Left*2});
+        $(".bigimg_box").css({marginTop:-dis_Top*2});
+    });
+    $(".show_img").mouseenter(function(){
+        $(".proimg_tip").css({display:"block"});
+        $(".bigImg").css({display:"block"});
+    }).mouseleave(function(){
+        $(".proimg_tip").css({display:"none"});
+        $(".bigImg").css({display:"none"});
+
+    });
+
+
+    $(".imglist li a img").click(function(){
+        $(this).parent().parent().addClass("checked_img").removeClass("nochecked_img").siblings().removeClass("checked_img").addClass("nochecked_img");
+        var str = $(this).attr("src");
+        console.log(str);
+        $(".show_img").children("img").attr("src",str);
+        $(".bigimg_box").children("img").attr("src",str);
+    });
+
+    var P_Color=null;
+    var P_Price=null;
+    $(".pro_color").click(function(){
+        $(this).css({borderColor:"#C00"});
+        $(this).children("i").css({display:"block"});
+        $(this).siblings().css({borderColor:"#e7e7e7"});
+        $(this).siblings().children("i").css({display:"none"});
+        P_Color = $(this).children("img").attr("data-color");
+        P_Price = $(this).children("img").attr("data-price")
+    });
+    var P_Size = null;
+    $(".pro_size").click(function(){
+        $(this).css({borderColor:"#C00"});
+        $(this).children("i").css({display:"block"});
+        $(this).siblings().css({borderColor:"#e7e7e7"});
+        $(this).siblings().children("i").css({display:"none"});
+        P_Size =$(this).attr("rel");
+    });
+    var P_Count = $(".sumbox").children("input").val();
+    $(".sumbox i").click(function(){
+        var i = $(this).index(".sumbox i");
+        var count = P_Count;
+        if(i==1){
+            count++;
+            if(count>=10){
+                count=10;
+                $(this).removeClass("numUp").addClass("numupNo");
+            }
+            $(this).siblings("i").removeClass("numdownNo").addClass("numDown");
+            $(".sumbox").children("input").val(count);
+            P_Count =count;
+        }else{
+            count--;
+            if(count<=1){
+                count=1;
+                $(this).removeClass("numDown").addClass("numdownNo");
+            }
+            $(this).siblings("i").removeClass("numupNo").addClass("numUp");
+            $(".sumbox").children("input").val(count);
+            P_Count =count;
+        }
+        console.log(P_Count);
+    })
+    $(".sumbox input").blur(function(){
+        var count = $(".sumbox").children("input").val();
+        if(count<=1){
+            count=1;
+            $(this).siblings("i").eq(0).removeClass("numDown").addClass("numdownNo");
+            $(this).siblings("i").eq(1).removeClass("numupNo").addClass("numUp");
+        }if(count>=10){
+            count =10;
+            $(this).siblings("i").eq(0).removeClass("numdownNo").addClass("numDown");
+            $(this).siblings("i").eq(1).removeClass("numUp").addClass("numupNo");
+        }
+        $(".sumbox").children("input").val(count);
+
+        P_Count =count;
+    });
+    $(".payments").hover(function(){
+        $(this).children("div").css({width:"157",borderColor:"#e7e7e7"});
+        $(this).children("div").children("ul").css({display:"block"});
+    },function(){
+        $(this).children("div").children("ul").css({display:"none"});
+        $(this).children("div").css({width:"98",borderColor:"#FFF"});
+    });
+    var P_Id = $("#P_Title").attr("data-Pid");
+
+    $("#tj_addcart").click(function () {
+        if(P_Color==null||P_Size==null){
+            alert("请选择颜色和尺码")
+        }else{
+            if(iflogin.length>0){
+                var obj={
+                    P_Id:P_Id,
+                    P_Color:P_Color,
+                    P_Price:P_Price,
+                    P_Size:P_Size,
+                    P_Count:P_Count
+                };
+                addToCookie(obj);
+            }else{
+                alert("当前未登录,请先登录!")
+            }
+
+        }
+
+    });
+    /***********************************************************************************************************************************Cookie相关操作*/
+    var cookieArray  = getCookieArray("CartList");
+    var iflogin  = getCookieArray("userKey");
+    function getCookieArray() {
+        //拿到一条一条的cookie数组
+        var arr = document.cookie.split("; ");
+        for(var i= 0,len=arr.length;i<len;i++) {
+            var key = arr[i].split("=")[0];
+            var value = arr[i].split("=")[1];
+            if(key=="list") {
+                return JSON.parse(value);//返回数组
+            }
+        }
+        return [];//之前没有加入到购物车
+    }
+    function  getIndexOf(obj) {
+        for(var i= 0,len=cookieArray.length;i<len;i++) {
+            if(cookieArray[i].P_Color==obj.P_Color&&cookieArray[i].P_Size==obj.P_Size&&cookieArray[i].P_Id==obj.P_Id) {
+                return i;
+            }
+        }
+        return -1;//该商品之前从未被添加过
+    }
+    function  addToCookie(obj) {
+        var index = getIndexOf(obj);//检测当前要添加的商品在数组中是否已存在
+        console.log(index);
+        if(index!=-1) {//假如数组中已存在该商品,把该商品的数量加一
+            //先操作cookie所对应的那个数组
+            var count = parseInt(cookieArray[index].P_Count);
+            count += parseInt(obj.P_Count);
+            if(count>=10)count = 10;
+            cookieArray[index].P_Count = count;
+        }
+        else {//把obj对应的商品添加到数组中
+            cookieArray.push(obj);
+        }
+        var date = new Date();
+        date.setDate(date.getDate()+3);
+        document.cookie = "CartList="+JSON.stringify(cookieArray)+";expires="+date.toString();
+        alert("成功添加到购物车")
+    }
+/***************************************************************************************************************************************8*/
 
 
 

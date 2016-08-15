@@ -1,3 +1,5 @@
+
+body{font: 12px "宋体",tahoma,arial,sans-serif;}
 .shoplist_list_skin{
     background:#FFF;
 }
@@ -16,3 +18,671 @@
     display: none;
     z-index: 800;
 }
+/***********************************************************************   店铺招牌*****     */
+.shopsign{
+    width:100%;
+    margin-top:10px;
+}
+.signbox{
+    width:1200px;
+    margin:0 auto;
+}
+.store_logo{
+    line-height: 120px;
+}
+.store_logo a{
+    color: #333;
+    font-size:30px;
+    font-family:"黑体";
+}
+.sign_menu{
+    width:1200px;
+    margin:0 auto;
+}
+
+/*****************************************************************  3 级菜单样式 */
+#list001{
+    height:30px;
+    background-color: #3c4251;
+}
+.menu1{
+    position: relative;
+    display: block;
+    height:30px;
+    width:135px;
+    float: left;
+    text-align: center;
+    line-height:30px;
+}
+.menu1 a{
+    display: block;
+    color:#FFF;
+    height: 30px;
+    width:auto;
+}
+.menu1:hover{background:#565f77;}
+.menu2_box{
+    position: absolute;
+    top: 30px;
+    left: -1px;
+    background: #eceff7;
+    width: 188px;
+    border: 1px solid #6c7280;
+    border-top: 0;
+    display: none;
+    z-index: 800;
+}
+.menu2_li{
+    float: left;
+    width: 188px;
+    font-weight: normal;
+    text-align: left;
+    position: relative;
+    color:#000;
+}
+.menu2_li a{
+    display: block;
+    color:#000;
+    height: 30px;
+    text-indent: 30px;
+    width:auto;
+}
+.menu3_box{
+    background:#eceff7;
+    display: none;
+    width:188px;
+    min-height:30px;
+    overflow: hidden;
+    position: absolute;
+    top:-1px;
+    left:188px;
+    border: 1px solid #6c7280;
+    z-index: 900;
+}
+.menu3_li{
+    width:200px;
+    height: 30px;
+}
+.menu3_li a{
+    display: block;
+    color:#000;
+    height: 30px;
+    text-indent: 30px;
+    width:auto;
+}
+.collect{
+    width:70px;
+    height:30px;
+    float:right;
+    background:#606982;
+}
+.collect a{
+    height:30px;
+    width:auto;
+    color: #FFF;
+    line-height:30px;
+    text-align: center;
+}
+/************************************************************************************主体部分*/
+.pmain {
+    margin: 10px auto;
+    width: 1200px;
+    color: #999;
+    overflow: hidden;
+}
+.location {
+     height: 26px;
+     line-height: 26px;
+ }
+.location a {
+    color: #999;
+}
+.pside {
+    float: right;
+    width: 178px;
+    border: 1px solid #f2f2f2;
+    border-top-width: 3px;
+    padding: 0 10px;
+}
+.business {
+    margin-bottom: 20px;
+}
+.business strong {
+    display: block;
+    line-height: 16px;
+    padding: 15px 10px 15px 31px;
+    border-bottom: 1px double #e7e7e7;
+    color: #333;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    font-weight: normal;
+    text-indent: -21px;
+}
+.business strong i {
+    width: 16px;
+    height: 16px;
+    background:url(../image/productshow.png) no-repeat -225px -128px;
+}
+.pmain i {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: -3px;
+}
+
+
+.business ul {
+    padding: 14px 0 14px 11px;
+}
+
+.business li {
+    color: #666;
+    line-height: 24px;
+}
+
+.business li p {
+    display: inline-block;
+    width: 86px;
+    height: 14px;
+    line-height: 14px;
+    background-position: -211px -220px;
+}
+.pmain i, .business li p, .imglistbox li, .promotions, .closewin, .circular_tip i, .comment-msg-box h3 a, .comment-msg-box p i, .winposbox i {
+    background: url(../image/productshow.png) no-repeat;
+}
+.business li p i {
+    height: 14px;
+    background-position: -211px -200px;
+}
+.business li .self-customer-service {
+    padding-left: 3px;
+}
+.business div {
+    height: 31px;
+    text-align: center;
+}
+.business div a {
+    display: inline-block;
+    width: 72px;
+    height: 29px;
+    text-align: center;
+    line-height: 29px;
+    color: #333;
+    border: 1px solid #f2f2f2;
+    background: #fafafa;
+    margin: 0 5px;
+}
+.pledges {
+    border-top: 1px dotted #e7e7e7;
+    padding: 12px 0 30px 11px;
+    color: #826c60;
+}
+.pledges dt {
+    line-height: 28px;
+}
+.pledges dd {
+    line-height: 24px;
+}
+.pledges .genuine {
+    background-position: -251px -128px;
+}
+.pledges i {
+    width: 14px;
+    height: 14px;
+}
+
+.pledges .returns {
+    background-position: -275px -128px;
+}
+.list {
+    padding-top: 25px;
+}
+
+.list h3 {
+    border-top: 1px dotted #d4d4d4;
+    height: 17px;
+    line-height: 32px;
+    text-align: center;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+    color: #666;
+}
+/********************************************* 放大镜******************************/
+
+.proImg {
+    float: left;
+    width: 420px;
+    position: relative;
+    z-index: 35;
+}
+
+.proimg_box{
+    position: relative;
+    width:418px;
+    height:418px;
+    border:1px solid #e7e7e7;
+    margin-bottom:14px;
+}
+.bigImg{
+    position: absolute;
+    display: none;
+    width:418px;
+    height:418px;
+    overflow: hidden;
+    border:1px solid #e7e7e7;
+    top:0;
+    left:430px;
+    z-index:1000;
+}
+.bigimg_box{
+    width:800px;
+    height:800px;
+}
+.bigimg_box img{
+    width:100%;
+    height:100%;
+}
+.show_img{
+    height:418px;
+    width:418px;
+    cursor: pointer;
+}
+.show_img img{
+    position: relative;
+    width: 100%;
+    height:100%;
+}
+.proimg_tip{
+    position: absolute;
+    display: none;
+    height:218px;
+    width:218px;
+    background: rgba(255,255,255,0.8);
+    top:0;
+    left:0;
+    z-index: 800;
+}
+.proimg_icon{
+    position: relative;
+    display: block;
+    height:29px;
+    width:29px;
+    top:-28px;
+    left:389px;
+    z-index: 1000;
+    background:url(../image/productshow.png) no-repeat -456px -61px
+}
+
+.imglistbox {
+    width: 385px;
+    height: 64px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+}
+.imglistbox ul {
+    width: 10000%;
+    position: absolute;
+}
+.imglistbox li {
+    float: left;
+    width: 60px;
+    margin-right: 18px;
+    height: 64px;
+    cursor: pointer;
+}
+.imglistbox .checked_img{
+    background-position: -0px -2px;
+}
+.imglistbox .nochecked_img{
+    background-position: -0px -76px;
+}
+
+.imglistbox li.current {
+    background-position: -0px -2px;
+}
+.imglistbox li a {
+    display: block;
+    max-height: 58px;
+    max-width: 58px;
+    margin:5px 1px 0 1px;
+}
+.imglistbox li a img{
+    display: block;
+    max-height: 58px;
+    max-width: 58px;
+}
+
+.share {
+    clear: both;
+    padding-top: 15px;
+    height: 49px;
+    line-height: 18px;
+}
+.share div {
+    float: left;
+    height: 30px;
+    display: block;
+    position: relative;
+}
+.share span i {
+    width: 12px;
+    height: 12px;
+    background-position: -156px -154px;
+}
+.share p {
+    display: none;
+    position: absolute;
+    border: 1px solid #e3e3e3;
+    width: 98px;
+    height: 94px;
+    background: #fff;
+    padding: 6px 10px;
+    top: 22px;
+    left: 0px;
+}
+.share p a {
+    display: block;
+    color: #666;
+    line-height: 24px;
+    height: 24px;
+}
+.share .weibo i {
+    background-position: -513px -2px;
+}
+.share p a i {
+    width: 16px;
+    height: 16px;
+}
+.share .sina i {
+    background-position: -513px -26px;
+}
+
+.share .douban i {
+    background-position: -513px -98px;
+}
+.share .qzone i {
+    background-position: -513px -74px;
+}
+.share #favPro {
+    float: right;
+    color: #999;
+}
+.share #favPro i {
+    width: 12px;
+    height: 11px;
+    background-position: -178px -154px;
+    margin-bottom: -2px;
+}
+/**********************************************************************************************************************订单信息****/
+.proinfo {
+    float: left;
+    padding-left: 30px;
+    width: 520px;
+}
+.proinfo h1 {
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    color: #333;
+    padding-bottom: 12px;
+}
+.proinfo .pricebox {
+    border-top: 1px dotted #d4d4d4;
+    padding-top: 10px;
+}
+.proinfo .fho {
+    overflow: hidden;
+    height: 30px;
+}
+.proinfo .float {
+    min-height: 30px;
+    height: 30px;
+}
+.proinfo .float div {
+    float: left;
+}
+.proinfo .float div.codeno {
+    float: right;
+    padding-right: 9px;
+}
+.oof {
+    font-family: "Microsoft YaHei";
+    font-style: normal;
+}
+.proinfo .box {
+    line-height: 30px;
+}
+.proinfo .pricebox .float .redoof {
+    color: #C00;
+    font-size: 18px;
+    font-family: "Microsoft YaHei";
+    font-weight: bold;
+}
+.proinfo .pricebox .current_price {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 28px;
+    color: #C00;
+    font-weight: bold;
+}
+.pl1em {
+    padding-left: 1em;
+}
+.pmain .gray6 {
+    color: #666;
+}
+.amount {
+    border: 1px dotted #d4d4d4;
+    border-width: 1px 0px;
+    height: 36px;
+    margin-top: 11px;
+}
+.amount p {
+    float: left;
+    width: 172px;
+    text-align: center;
+    border-right: 1px solid #e5dfda;
+    margin-top: 10px;
+    height: 16px;
+    line-height: 16px;
+}
+.proinfo .red {
+    color: #c00;
+}.proinfo b {
+     font-weight:900;
+ }
+.amount p.last {
+    border: none;
+}
+.selectbox {
+    padding-top: 18px;
+    position: relative;
+}
+.colorbox {
+    padding-bottom: 12px;
+}
+.colorbox p {
+    float: left;
+    line-height: 40px;
+}
+.pl1em {
+    padding-left: 1em;
+}
+.colorbox ul {
+    float: left;
+    width: 460px;
+}
+.colorbox ul li{
+    position: relative;
+    height:36px;
+    width:36px;
+    float: left;
+    border:2px solid #e7e7e7;
+    margin-left:5px
+}
+.colorbox ul li img{
+    display:block;
+    width:36px;
+    height:36px;
+}
+.colorbox ul li i{
+    display: none;
+    position: absolute;
+    height:11px;
+    width:11px;
+    background-position: -135px -128px;
+    top:26px;
+    left:26px;
+}
+.proinfo .clear {
+    float: none;
+    clear: both;
+    height: 1px;
+    overflow: hidden;
+}
+/***************************    号码      **************************/
+.sizebox {
+    padding-bottom: 12px;
+}
+.sizebox p {
+    float: left;
+    line-height: 40px;
+}
+.sizebox ul {
+    float: left;
+    max-width: 390px;
+    width: 380px;
+}
+.sizebox li {
+    position: relative;
+    float: left;
+    height: 36px;
+    width: 36px;
+    margin-left: 5px;
+    border:2px solid #e7e7e7;
+    font: 12px/36px "宋体";
+    text-align: center;
+    cursor: pointer;
+}
+.sizebox li i{
+    display: none;
+    position: absolute;
+    height:11px;
+    width:11px;
+    background-position: -135px -128px;
+    top:26px;
+    left:26px;
+}
+/*************************************************************      数量***************************/
+.sumbox {
+    height: 48px;
+    line-height: 30px;
+}
+.sumbox p {
+    float: left;
+}
+.sumbox i {
+    display: block;
+    float: left;
+    height: 30px;
+    width: 30px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.sumbox .numDown {
+    background-position: -95px -36px;
+}
+.sumbox .numdownNo {
+     background-position: -95px -2px;
+ }
+.sumbox .numUp {
+      background-position: -95px -104px;
+  }
+.sumbox .numupNo {
+       background-position: -95px -70px;
+   }
+.sumbox input {
+    float: left;
+    width: 50px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #bfbfbf;
+    background: #fff;
+    text-align: center;
+}
+/*******************************************************************************/
+.buttonbox {
+    padding: 15px 0 0 4em;
+}
+.payments {
+    float: right;
+    position: relative;
+    line-height: 24px;
+    width: 80px;
+}
+.payments div {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    border: 1px solid #fff;
+    width: 98px;
+    background: #fff;
+    padding: 4px 0 8px 10px;
+}
+.payments p i {
+    width: 11px;
+    height: 6px;
+    background-position: -251px -154px;
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+.payments ul {
+    display: none;
+}
+.payments ul:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.payments li {
+    float: left;
+    width: 60px;
+    height: 24px;
+    overflow: hidden;
+}
+.payments li a{
+    font:12px/24px "宋体";
+    color:#666;
+}
+.payments li a:hover{color:#c00}
+.buttonbox .bred {
+    background-color: #c00;
+    outline: none;
+}
+.buttonbox .bred:hover{opacity:0.8;}
+.buttonbox .borg {
+    background-color: #da720e;
+    outline: none;
+}
+.buttonbox .borg:hover{opacity:0.8;}
+.buttonbox input {
+    border: none;
+    width: 180px;
+    height: 40px;
+    float: left;
+    font-size: 16px;
+    color: #fff;
+    font-family: "Microsoft YaHei";
+    margin-right: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
