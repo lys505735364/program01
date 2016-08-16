@@ -7,6 +7,54 @@
     <link rel="stylesheet" href="css/product.css">
 </head>
 <body>
+
+<div class="index_rightBar" id="index_right">
+    <div class="rightbar_box">
+        <div class="space1"></div>
+        <div class="space2">
+            <div class="rshopcart">
+                <div class="rshopcart_img"></div>
+                <div class="rshopcart_title">购</br>物</br>车</br><i>3</i></div>
+                <div class="rshopcart_box"></div>
+            </div>
+        </div>
+        <div class="space3">
+            <div class="goodnews">
+                <div class="goodnews_img"></div>
+                <div class="goodnews_title">优惠信息</div>
+            </div>
+
+        </div>
+        <div class="space4">
+            <div class="history">
+                <div class="history_img"></div>
+                <div class="history_title">历史记录</div>
+            </div>
+
+
+        </div>
+        <div class="space5">
+            <div class="server">
+                <div class="server_img"></div>
+                <div class="server_title">在线客服</div>
+            </div>
+        </div>
+        <div class="space6">
+            <div class="rightbar_code">
+                <div class="rightbar_code_l"></div>
+                <div class="rigntbar_code_b"></div>
+                <div class="code_tip"></div>
+            </div>
+            <div class="backto_top">
+                <div class="backtop_img"></div>
+                <div class="backto_top_title">返回顶部</div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
 <!----最顶部-->
 <div class="index_Head_Head">
     <div class="index_Head" id="index_Head">
@@ -71,7 +119,10 @@
         <div class="index_Search">
             <form action="#" name="SearchBox" class="Search_Form" id="SearchForm">
                 <input type="text" class="index_Search_Text" id="index_Search_Text"/>
-                <input type="button" name="SearchButton" id="index_Search_Button" value="搜索"/>
+                <input type="button" name="SearchButton" class="index_Search_Button" value="搜索"/>
+                <div class="head_solist">
+
+                </div>
             </form>
             <div class="Search_ListBox" id="SearchList" style="diplay:none"></div>
             <div class="index_Active_Tlink">
@@ -422,6 +473,130 @@
     </div>
 
     <!-------------------------------------------------------------------------------------------------------------------------------->
+    <div class="description" id="description">
+        <div class="tabbar">
+            <ul>
+                <li class="current" rel="details">商品详情</li>
+                <li rel="commentCont" class="">用户评论</li>
+                <li rel="promise" class="">购物保障</li>
+                <li rel="paydelivery" class="">支付与配送</li>
+            </ul>
+            <div><p>手机下单更方便<i></i><span><img src="http://img2.paishoes.com/pxqrcodes_app/luoyansha/201509/08/1122649_100100.png"></span></p></div>
+        </div>
+        <div id="js_details" class="details">
+            <ul class="detailso">
+                <li><b>货号：</b><strong title="落雁莎 FBHFS708">落雁莎 FBHFS708</strong></li>
+                <li><b>品牌：</b><a title="落雁莎官方网站" href="/luoyansha/">落雁莎</a></li>
+                <li><b>款式：</b><a title="女连衣裙" href="/p-m0332s034901083_1.html">女连衣裙</a></li>
+                <li><b>颜色：</b><span title="黑色">黑色</span></li>
+                <li><b>分类：</b><span title="女装">女装</span></li>
+                <li style="display: none;"><b>上架时间：</b><span title="2015-09-08">2015-09-08</span> <input type="hidden" id="shoesClass" value="2"></li>
+                <li style="display: none;"><b>上市年份：</b><span title="2014年冬季">2014年冬季</span></li>
+                <li><b>适合季节：</b><span title="秋季">秋季</span></li>
+                <li><b>性别：</b><span title="女">女</span></li>
+                <li><b>风格：</b><span title="甜美">甜美</span></li>
+                <li><b>款式细节：</b><span title="流苏">流苏</span></li>
+                <li><b>裙长：</b><span title="短裙">短裙</span></li>
+                <li><b>图案：</b><span title="纯色">纯色</span></li>
+                <li><b>材质：</b><span title="针织">针织</span></li>
+                <li><b>适用年龄：</b><span title="25-29岁">25-29岁</span></li>
+                <li><b>袖长：</b><span title="长袖">长袖</span></li>
+                <li><b>袖型：</b><span title="常规袖">常规袖</span></li>
+                <li><b>面料：</b><span title="涤纶">涤纶</span></li>
+                <li><b>组合形式：</b><span title="两件套">两件套</span></li>
+                <li><b>衣门襟：</b><span title="其他">其他</span></li>
+                <li><b>裙子款式：</b><span title="其他款式">其他款式</span></li>
+                <li><b>领型：</b><span title="圆领">圆领</span></li>
+                <li><b>适用体型：</b><span title="普通体型">普通体型</span></li>
+                <li><b>商品编码：</b><span title="商品编码">1122649</span></li>
+                <li class="clear"></li>
+            </ul>
+            <div class="size-table"></div>
+        </div>
+    </div>
+    <div class="subdescription" id="subdescription">
+        <div class="subtabbar" id="subtabbar">
+            <i class="top"></i>
+            <ul>
+                <li class="current" rel="details"><i></i>商品详情</li>
+                <li rel="commentCont" class=""><i></i>用户评论</li>
+                <li rel="promise" class=""><i></i>购物保障</li>
+                <li rel="paydelivery" class=""><i></i>支付与配送</li>
+            </ul>
+            <i class="bot"></i>
+        </div>
+        <div class="subcards">
+            <div class="detailsimg">
+                <img src="image/p_img01.jpg" alt="">
+                商品展示
+            </div>
+            <!----------------------------------------------------------------------------------   评价      ------------------------------------>
+            <div class="user_comment">
+                <div class="comment-fractions">
+                    <p class="comment-fraction">
+                        综合满意指数
+                        <span class="red"><strong>4.8</strong>分</span>
+                        <i class="star"><i style="width:96%;"></i></i>
+                    </p>
+                    <p class="comment-satisfied">
+					<span class="satisfied">
+						<span style="width:78%;"></span>
+					</span>
+                        <b class="pl1em">非常不满意</b>
+                        <b>不满意</b>
+                        <b>一般</b>
+                        <b>满意</b>
+                        <b>非常满意</b>
+                    </p>
+                    <a class="comment-go-comment" href="/member/user_comment" target="_blank">我要评论</a>
+                </div>
+                <div id="js-comment-filter" class="comment-filter">
+                    <a rel="nosatisfied">不满意<i>（0）</i></a>
+                    <a rel="general">一般<i>（0）</i></a>
+                    <a rel="satisfied">满意<i>（83）</i></a>
+                    <!--a rel="useful" class="lasta">有用<i>（0）</i></a-->
+                    <a class="selected" rel="all">全部<i>（83）</i></a>
+                </div>
+                <ul id="js-comment-list" class="comment-list">
+
+
+
+                    <li>
+                        <div class="user-info">
+                            <i class="grade-3"></i>
+                            屬於*們
+                            <!--i></i-->
+                        </div>
+                        <div class="comment-info">
+                            <h3>
+                                <p><span>购买颜色：</span>卡其色</p>
+                                <span>尺码：</span>M
+                                <i class="star"><i style="width:100%;"></i></i>
+                            </h3>
+                            <div>
+                                款式新颖好看，价格优惠，料子好
+                                <br>
+                                <span>2016-06-17 09:50:20</span>
+
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </li>
+
+
+                </ul>
+            </div>
+
+
+
+
+
+            <div class="shopping_safe"><h2>购物保障</h2></div>
+            <div class="pay_send"><h2>支付与配送</h2></div>
+        </div>
+
+    </div>
+
 
 
 </div>
@@ -582,6 +757,9 @@
 <script src="js/jquery-1.12.4.min.js"></script>
 <script src="js/product.js"></script>
 <script src="js/ajax.js"></script>
+<script src="js/CookieAoout.js"></script>
+<script src="js/SearchBox.js"></script>
+<script src="js/rightbar.js"></script>
 
 
 </body>

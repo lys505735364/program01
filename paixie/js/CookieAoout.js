@@ -20,13 +20,13 @@ $("document").ready(function() {
 //----------------------------------------------------验证登录状态
     var loginCookie = getCookieArray("userKey");
     if (loginCookie) { ////已经登录
-        $(".Has_login").css({display: "inlinr-block"});
+        $(".Has_login").css({display: "inline-block"});
         $(".Not_login").css({display: "none"});
         console.log(loginCookie);
 
     } else { //没有登录
         console.log("没登录");
-        $(".Not_login").css({display: "inlinr-block"});
+        $(".Not_login").css({display: "inline-block"});
         $(".Has_login").css({display: "none"});
     }
 });

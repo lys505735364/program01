@@ -7,6 +7,53 @@
     <link rel="stylesheet" href="css/shoplist.css">
 </head>
 <body>
+
+<div class="index_rightBar" id="index_right">
+    <div class="rightbar_box">
+        <div class="space1"></div>
+        <div class="space2">
+            <div class="rshopcart">
+                <div class="rshopcart_img"></div>
+                <div class="rshopcart_title">购</br>物</br>车</br><i>3</i></div>
+                <div class="rshopcart_box"></div>
+            </div>
+        </div>
+        <div class="space3">
+            <div class="goodnews">
+                <div class="goodnews_img"></div>
+                <div class="goodnews_title">优惠信息</div>
+            </div>
+
+        </div>
+        <div class="space4">
+            <div class="history">
+                <div class="history_img"></div>
+                <div class="history_title">历史记录</div>
+            </div>
+
+
+        </div>
+        <div class="space5">
+            <div class="server">
+                <div class="server_img"></div>
+                <div class="server_title">在线客服</div>
+            </div>
+        </div>
+        <div class="space6">
+            <div class="rightbar_code">
+                <div class="rightbar_code_l"></div>
+                <div class="rigntbar_code_b"></div>
+                <div class="code_tip"></div>
+            </div>
+            <div class="backto_top">
+                <div class="backtop_img"></div>
+                <div class="backto_top_title">返回顶部</div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
 <!----最顶部-->
 <div class="index_Head_Head">
     <div class="index_Head" id="index_Head">
@@ -71,7 +118,10 @@
         <div class="index_Search">
             <form action="#" name="SearchBox" class="Search_Form" id="SearchForm">
                 <input type="text" class="index_Search_Text" id="index_Search_Text"/>
-                <input type="button" name="SearchButton" id="index_Search_Button" value="搜索"/>
+                <input type="button" name="SearchButton" class="index_Search_Button" value="搜索"/>
+                <div class="head_solist">
+
+                </div>
             </form>
             <div class="Search_ListBox" id="SearchList" style="diplay:none"></div>
             <div class="index_Active_Tlink">
@@ -463,6 +513,8 @@
 <script src="js/CookieAoout.js"></script>
 <script src="js/ajax.js"></script>
 <script src="js/handlebars.min.js"></script>
+<script src ="js/SearchBox.js"></script>
+<script src="js/rightbar.js"></script>
 <script type="text/x-handbars-template" id="hand_get">
     <ul class="Goods_List_get">
         {{#each good}}

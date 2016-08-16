@@ -2,6 +2,9 @@
  * Created by Administrator on 2016/8/14.
  */
 $("document").ready(function() {
+    /************* 先验证登录状态*************/
+
+    var iflogin  = getCookieArray("userKey");
 
 
     $(".nav_box_no1").hover(function () {
@@ -401,7 +404,6 @@ $(".menu1").mouseenter(function(){
     });
     /***********************************************************************************************************************************Cookie相关操作*/
     var cookieArray  = getCookieArray("CartList");
-    var iflogin  = getCookieArray("userKey");
     function getCookieArray() {
         //拿到一条一条的cookie数组
         var arr = document.cookie.split("; ");
@@ -440,21 +442,41 @@ $(".menu1").mouseenter(function(){
         document.cookie = "CartList="+JSON.stringify(cookieArray)+";expires="+date.toString();
         alert("成功添加到购物车")
     }
-/***************************************************************************************************************************************8*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/***********************************************************************商品详情选项卡 ****************************************************************8*/
+    $(".tabbar ul li").click(function () {
+        $(this).addClass("current").siblings().removeClass("current");
+        var i = $(this).index(".tabbar ul li");
+        $(".subcards").children('div').eq(i).css({display:"block"}).siblings().css({display:"none"});
+        $("#subtabbar").children("ul").children("li").eq(i).addClass("current").siblings().removeClass("current");
+        if(i==0){
+            $(".details").css({display:"block"});
+        }else{
+            $(".details").css({display:"none"});
+        }
+    });
+    $(".subtabbar ul li").click(function () {
+        $(this).addClass("current").siblings().removeClass("current");
+        var i = $(this).index(".subtabbar ul li");
+        $(".subcards").children('div').eq(i).css({display:"block"}).siblings().css({display:"none"});
+        $(".tabbar ul li").eq(i).addClass("current").siblings().removeClass("current");
+        if(i==0){
+            $(".details").css({display:"block"});
+        }else{
+            $(".details").css({display:"none"});
+        }
+    });
+    var subtabbarleft =$("#subdescription").offset().left;
+    var subtabbartop = $("#subdescription").offset().top;
+    $(this).scroll(function(){
+        console.log(subtabbartop);
+        var dis = $(this).scrollTop() -  subtabbartop;
+        if(dis<0){
+            dis=0;
+            $("#subtabbar").css({position:"absolute",left:0});
+        }else{
+            $("#subtabbar").css({position:"fixed",left:subtabbarleft});
+        }
+    })
 
 
 });

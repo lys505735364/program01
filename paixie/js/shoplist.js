@@ -299,7 +299,7 @@ $("document").ready(function(){
             var GetHTML = $template_1(data);
             $(".Goods_List").append(GetHTML);
         }
-    })
+    });
     $("body").on("mouseenter",".Goods_item",function(){
         $(this).css({borderColor:"#cd2a2c",zIndex:"200","boxShadow":" 2px 2px 5px rgba(0,0,0,0.12)"});
         $(this).stop().animate({height:350},200);

@@ -26,20 +26,18 @@ body{
     left:20px;
     top:10px
 }
-.index_rightBar{
-	display:none;
-    width: 34px;
-    height: 100%;
-    position: fixed;
-    top:0;
-    right:0;
-    background-color: #989ba3;
-    z-index: 900;
-}
+
 .indexshop_list_color{
     color:#fff;
 }
-
+.scroll_search{
+    display:inline-block;
+    height:40px;
+    width:510px;
+    float:left;
+    margin-top:10px;
+    margin-left:50px;
+}
 /*
 *楼层导航
 */
