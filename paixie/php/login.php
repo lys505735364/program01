@@ -7,12 +7,11 @@
  */
 $name=$_REQUEST['name'];
 $pwd = $_REQUEST['pwd'];
-
-$conn = new mysqli('localhost', 'root', "123", "paixie");
+$conn = new mysqli('127.0.0.1', 'root', "123", "paixie");
 if ($conn->connect_error) {
     echo "404";
 } else {
-    $sqla = "SELECT id FROM user WHERE uname=$name AND pwd=$pwd";
+    $sqla = "SELECT id FROM user WHERE uname='$name' AND pwd='$pwd'";
     $res = $conn->query($sqla);
     $arr = [];
     if ($res) {

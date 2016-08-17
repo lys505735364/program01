@@ -7,7 +7,6 @@ $("document").ready(function() {
     function getCookieArray(k) {
         //拿到一条一条的cookie数组
         var arr = document.cookie.split("; ");
-        console.log(arr);
         for(var i= 0,len=arr.length;i<len;i++) {
             var key = arr[i].split("=")[0];
             var value = arr[i].split("=")[1];
@@ -22,7 +21,6 @@ $("document").ready(function() {
     if (loginCookie) { ////已经登录
         $(".Has_login").css({display: "inline-block"});
         $(".Not_login").css({display: "none"});
-        console.log(loginCookie);
 
     } else { //没有登录
         console.log("没登录");

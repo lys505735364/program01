@@ -5,8 +5,6 @@ $("document").ready(function() {
     /************* 先验证登录状态*************/
 
     var iflogin  = getCookieArray("userKey");
-
-
     $(".nav_box_no1").hover(function () {
         $(this).css({borderRight: "none"});
         $(this).children("span").stop().animate({marginLeft: 40}, 500);
@@ -322,7 +320,7 @@ $(".menu1").mouseenter(function(){
         $(this).children("i").css({display:"block"});
         $(this).siblings().css({borderColor:"#e7e7e7"});
         $(this).siblings().children("i").css({display:"none"});
-        P_Color = $(this).children("img").attr("data-color");
+        P_Color = $(this).children("img").attr("title");
         P_Price = $(this).children("img").attr("data-price")
     });
     var P_Size = null;
@@ -344,7 +342,8 @@ $(".menu1").mouseenter(function(){
                 $(this).removeClass("numUp").addClass("numupNo");
             }
             $(this).siblings("i").removeClass("numdownNo").addClass("numDown");
-            $(".sumbox").children("input").val(count);
+            $(".numText").val(count);
+            $(".numText").attr("value",count);
             P_Count =count;
         }else{
             count--;
@@ -353,11 +352,13 @@ $(".menu1").mouseenter(function(){
                 $(this).removeClass("numDown").addClass("numdownNo");
             }
             $(this).siblings("i").removeClass("numupNo").addClass("numUp");
-            $(".sumbox").children("input").val(count);
+            $(".numText").val(count);
+            $(".numText").attr("value",count);
             P_Count =count;
         }
-        console.log(P_Count);
-    })
+        console.log($(".numText").attr("value"));
+        console.log($(".numText").val());
+    });
     $(".sumbox input").blur(function(){
         var count = $(".sumbox").children("input").val();
         if(count<=1){
@@ -369,8 +370,8 @@ $(".menu1").mouseenter(function(){
             $(this).siblings("i").eq(0).removeClass("numdownNo").addClass("numDown");
             $(this).siblings("i").eq(1).removeClass("numUp").addClass("numupNo");
         }
-        $(".sumbox").children("input").val(count);
-
+        $(".numText").val(count);
+        console.log($(".numText").attr("value"));
         P_Count =count;
     });
     $(".payments").hover(function(){
@@ -386,7 +387,7 @@ $(".menu1").mouseenter(function(){
         if(P_Color==null||P_Size==null){
             alert("请选择颜色和尺码")
         }else{
-            if(iflogin.length>0){
+            if(iflogin.id){
                 var obj={
                     P_Id:P_Id,
                     P_Color:P_Color,
@@ -394,6 +395,10 @@ $(".menu1").mouseenter(function(){
                     P_Size:P_Size,
                     P_Count:P_Count
                 };
+                if(obj.P_Color=="黑色"){obj.img="image/color1.jpg"}
+                if(obj.P_Color=="绯红色"){obj.img="image/color2.jpg"}
+                if(obj.P_Color=="卡其色"){obj.img="image/color3.jpg"}
+                console.log(obj.img);
                 addToCookie(obj);
             }else{
                 alert("当前未登录,请先登录!")
@@ -404,13 +409,13 @@ $(".menu1").mouseenter(function(){
     });
     /***********************************************************************************************************************************Cookie相关操作*/
     var cookieArray  = getCookieArray("CartList");
-    function getCookieArray() {
+    function getCookieArray(arry) {
         //拿到一条一条的cookie数组
         var arr = document.cookie.split("; ");
         for(var i= 0,len=arr.length;i<len;i++) {
             var key = arr[i].split("=")[0];
             var value = arr[i].split("=")[1];
-            if(key=="list") {
+            if(key==arry) {
                 return JSON.parse(value);//返回数组
             }
         }
@@ -426,7 +431,6 @@ $(".menu1").mouseenter(function(){
     }
     function  addToCookie(obj) {
         var index = getIndexOf(obj);//检测当前要添加的商品在数组中是否已存在
-        console.log(index);
         if(index!=-1) {//假如数组中已存在该商品,把该商品的数量加一
             //先操作cookie所对应的那个数组
             var count = parseInt(cookieArray[index].P_Count);
@@ -441,7 +445,10 @@ $(".menu1").mouseenter(function(){
         date.setDate(date.getDate()+3);
         document.cookie = "CartList="+JSON.stringify(cookieArray)+";expires="+date.toString();
         alert("成功添加到购物车")
-    }
+    };
+    $("#tj_buy").click(function(){
+        location.href = "shopcart.html";
+    });
 /***********************************************************************商品详情选项卡 ****************************************************************8*/
     $(".tabbar ul li").click(function () {
         $(this).addClass("current").siblings().removeClass("current");
@@ -468,7 +475,6 @@ $(".menu1").mouseenter(function(){
     var subtabbarleft =$("#subdescription").offset().left;
     var subtabbartop = $("#subdescription").offset().top;
     $(this).scroll(function(){
-        console.log(subtabbartop);
         var dis = $(this).scrollTop() -  subtabbartop;
         if(dis<0){
             dis=0;
@@ -476,7 +482,7 @@ $(".menu1").mouseenter(function(){
         }else{
             $("#subtabbar").css({position:"fixed",left:subtabbarleft});
         }
-    })
+    });
 
 
 });

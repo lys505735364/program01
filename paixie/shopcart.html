@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="stylesheet" href="css/shopcart.css">
+</head>
+<body>
+<div class="cart_header">
+    <div class="cart_header_box">
+        <a href="/" target="_blank" class="logo"></a>
+        <p>
+            <span id="user_infor">欢迎您，阿斯蒂芬！ <a href="javascript:;">[会员管理]</a> <a class="loginout">[安全退出]</a></span>
+            <ins class="step1"><span class="one">1.选择商品</span><span class="two">2.确认订单信息</span><span class="three">3.成功提交订单</span></ins>
+        </p>
+    </div>
+    <i></i>
+</div>
+<div class="cart_title">
+    <strong class="yh">我的购物车</strong>
+    <span class="gray1"><span id="js-cart-num">1</span>/50</span>
+    <span class="gray2">您购物车的商品将被永久保存</span>
+    <p class="gray2"><i></i>商品价格请以订单提交时为准</p>
+</div>
+<form name="goodsform">
+    <ul class="w1200 gray2 goods_title">
+            <li style="width: 30px;" class="LH34">
+                <input class="selece_all on" type="checkbox" checked=""/>
+            </li>
+            <li style="width: 95px; text-align: left">全选</li>
+            <li style="width: 318px;">商品名称</li>
+            <li style="width: 307px;">拍鞋价（元）</li>
+            <li style="width: 180px;">数量</li>
+            <li style="width: 170px;">小计（元）</li>
+            <li class="last" style="width: 100px;">操作</li>
+    </ul>
+    <span class="w1200 lf" style="text-align:left">
+        <input class="selece_all select_store on" type="checkbox" checked="">
+        <i></i>
+        <strong><a class="f14" href="http://mall30652.paixie.net" target="_blank">落雁莎旗舰店</a></strong>
+    </span>
+    <ul class="w1200 goods_box">
+        <!--12321312332121321312321322131232132-->
+
+    </ul>
+
+</form>
+<div class="go_pay auto_0">
+    <label class="xcartall"><input type="checkbox" class="selece_all on" checked="">
+        <a class="gray2" id="js-select-all">全选</a></label>
+    <a id="js_del">删除选中商品</a>
+    <a href="/">继续购物</a>
+    <a href="javascript:;" id="clear_cart">清空购物车</a>
+    已选 <b class="orange cart_size" id="js-cart-numt">2</b> 件商品    合计（不含运费）：<strong class="orange yh" id="A_price">￥416.00</strong>
+    <a  class="go_pay_but">去结算&gt;</a>
+</div>
+
+<div class="area-cart-footer" style="margin-top: 0px;">
+    <div class="w1200" style="width: 1200px;">
+        <p>
+            <strong class="yh"><i></i>关于运费</strong>
+            <span class="gray1">拍鞋自营满129元免运费</span><br><a target="_blank" href="http://help.paixie.net/freight.html">更多运费信息</a>
+        </p>
+        <p>
+            <strong class="yh"><i></i>退换货政策</strong>
+            <span class="gray1">拍鞋网提供15天无理由免邮退换货服务</span><br><a target="_blank" href="http://help.paixie.net/shipping.html">查看具体信息</a>
+        </p>
+        <p>
+            <strong class="yh"><i></i>客户服务</strong>
+            <span class="gray1">需要帮助？请拨打</span><b class="orange">4008-81-82-83</b><br><span class="gray1">服务时间 8:00-23:30</span>
+        </p>
+    </div>
+</div>
+
+
+
+
+
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/CookieAoout.js"></script>
+<script src="js/shopcart.js"></script>
+<script src="js/handlebars.min.js"></script>
+<script type="text/x-handbars-template" id="goods_hand">
+    {{#each goodlist}}
+    <li class="goods_infor_box">
+        <ul class="goods_infor">
+            <li style="width: 30px;" class="LH120">
+                <input type="checkbox" class="select_one on" >
+            </li>
+            <li style="width: 94px;" class="LH120">
+                <a href="javascript:;" target="_blank" class="goods_img">
+                    <img src="{{img}}">
+                </a>
+            </li>
+            <li style="width: 318px;">
+                <a class="gray2" href="javascript" target="_blank">落雁莎2015秋冬新款休闲套裙秋女时尚休闲针织衫短裙套装女两件套</a>
+                <span class="red borbox">此商品不支持货到付款</span>
+                <span class="Color_size">尺码：{{P_Size}}码&nbsp;&nbsp;<br>颜色：{{P_Color}}</span>
+            </li>
+            <li style="width: 306px;" class="LH120">
+                <span class="price">{{P_Price}}.00</span>
+            </li>
+            <li style="width: 180px;" class="sumbox LH120">
+                <p class="count_box">
+                    <i class="numdownNo" style="margin-left: 50px;"></i>
+                    <input value="{{P_Count}}" name="num" class="numText">
+                    <i class="numUp"></i>
+                </p>
+            </li>
+            <li style="width: 170px;" class="LH120">
+                <span class="L_price"></span>
+            </li>
+            <li style="width: 100px;">
+                <a class="gray2 favorites" brandid="1281">移入收藏夹</a>
+                <a class="gray1 del">删除</a>
+            </li>
+        </ul>
+    </li>
+{{/each}}
+</script>
+
+
+
+</body>
+</html>
